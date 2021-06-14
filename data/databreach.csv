@@ -1,0 +1,55 @@
+Date,Org,Category,breach_count,type
+04-2020,CAM4,live streaming website,10880,"[Names,Email addresses,Genders,Chat transcripts, Email correspondence transcripts, Password hashes, IP addresses Payment logs]"
+10-2017,Yahoo,web services provider,3000,"[ Security questions, security answers]"
+03-2018,Aadhar,,1100,"[ Names, Aadhar number, bank details]"
+03-2019,First American Financial Corp.,financial services company,885,"[bank account records, social security numbers, wire transactions, mortgage paperwork.]"
+02-2019,Verifications.io,security startup,763,"[names, phone numbers, IP addresses, dates of birth and genders]"
+04-2019,Facebook,social media,540,"[comments, likes, reactions, account names, FB Ids]"
+2014,Yahoo,web services provider,500,"[names, email addresses, phone numbers, hashed passwords, birth dates, security questions, security answers]"
+11-2018,Starwood (Marriott),,500,"[names, contact information, passport number, Starwood Preferred Guest numbers, travel information]"
+11-2016,Adult Friend Finder,social media,412.1,"[names, email addresses , passwords]"
+06-2013,MySpace,social media,360,"[owner’s listed name, username, birthdate]"
+06-2018,Exactis,data broker,340,"[phone numbers, home, and email addresses, interests, the number of children, age of children, gender of their children]"
+05-2018,Twitter,social media,330,[password]
+10-2015,NetEase,Internet technology company,234,"[email address, password]"
+01-2021,Sociallarks,trade marketing service platform,200,"[Names, Phone numbers, Email addresses, Profile descriptions, Follower and engagement data, Locations, LinkedIn profile links, Connected social media account login names]"
+06-2017,Deep Root Analytics,audience-powered analytics company,200,"[voter Personal Identifiable Information (PII) including names, addresses, birthdates]"
+10-2013,Court Ventures,,200,"[credit card numbers, social security numbers]"
+06-2012,LinkedIn,social media,165,[]
+12-2018,Dubsmash,social media,162,"[email addresses, usernames, DBKDF2 password hashes]"
+10-2013,Adobe,computer software company,152,"[internal ID, username, email, encrypted password, password hint in plain text]"
+02-2018,MyFitnessPal,health tracker,150,"[email addresses, IP addresses, usernames, passwords]"
+09-2017,Equifax,Consumer reporting agency company,148,"[names, home addresses, phone numbers, dates of birth, social security numbers, driver’s license numbers, credit card information]"
+03-2014,ebay,E-commerce company,145,"[names, e-mail addresses, physical addresses, phone numbers, dates of birth, password]"
+05-2019,Canva,Graphic design company,137,"[email addresses, names, usernames, cities, passwords]"
+03-2008,Heartland Payment Systems,payment processing and technology provider,134,[credit card transactions]
+06-2128,Apollo,Healthcare company,126,"[names, email addresses, place of employment, roles held, location]"
+06-2013,Badoo,social media,112,"[names, birthdates, passwords, email addresses]"
+07-2013,Capital One,Bank holding company,106,"[credit card data, social security numbers, bank account numbers]"
+08-2013,Evite,social-planning website,101,"[email addresses, phone numbers, names, physical addresses, dates of birth, genders, passwords]"
+12-2018,Quora,question-and-answer website,100,"[names, email addresses, encrypted passwords]"
+01-2012,VK,social media,93,"[names, phone numbers, email addresses, passwords]"
+12-2016,Youku,video service,92,"[usernames, password]"
+03-2014,Rambler,search engine,91,"[usernames, password]"
+2018,Facebook,social media,87,[]
+10-2016,Dailymotion,video service,85,"[emails, username,passwords]"
+02-2015,Anthem,Insurance,78.8,"[names, addresses, dates of birth, employment histories of current and former customers]"
+2012,Dropbox,file hosting,69,"[email addresses, passwords]"
+02-2013,tumblr,social media,66,"[email addresses, passwords]"
+2016,Uber,transport,57,"[names, email addresses, mobile phone numbers, driver's license numbers, Uber's GitHub account, Uber's Amazon Web Services]"
+09-2014,Home Depot,Home improvement company,56,[credit card information]
+07-2005,TJX Companies Inc.,retail brands,45.6,"[million credit number , debit card numbers]"
+07-2015,Ashley Madison,cheating website,32,"[credit card payment history, Full names, Residential Addresses, Email addresses, Descriptions of what members were seeking]"
+01-2021,Bonobos,Men’s clothing store,12.3,"[shipping address records, account information records, partial credit card records]"
+02-2020,MGM Grand,hotel,10.6,[guest records]
+05-2020,Easyjet,Airline,9,"[email addresses, credit card details]"
+11-2020,123RF,stock photo and vector image seller,8.3,"[Phone numbers, Addresses, Paypal email’s, IP addresses, passwords]"
+03-2020,Marriott,hotel,5.2,"[Email address, Mail addresses, Phone numbers, Company names, Gender, Birth dates, Accommodation, preferences, Language preferences, Linked airline loyalty programs and number]"
+01-2021,MeetMindful,dating app,2.28,"[IP addresses, Real names, Email addresses, City, state, ZIP details, Facebook user Ids, Facebook authentication tokens, Dating preferences, Marital status, Birth dates, password]"
+01-2021,Pixlr,online photo-editor,1.9,"[Usernames, Email addresses, Country, password]"
+04-2020,Zoom,videotelephony proprietary software,0.5,[login credentials]
+02-2020,Slickwraps,manufacturer,0.37,[email address]
+04-2020,Magellan Health,Managed care company,0.365,"[social security numbers, W-2 information, employee ID numbers]"
+04-2020,Nintendo,consumer electronics and video game company,0.3,"[Account passwords, Account owner name, DOB, Email addresses, Country of residence]"
+09-2020,Mailfire,email marketing software,0.1,"[Name, Age, DOB, Gender, Location of message senders, IP addresses, Member profile pictures, Member bio descriptions]"
+03-2020,Antheus Tecnologia,biometrics company,0.076,[fingerprint records]
