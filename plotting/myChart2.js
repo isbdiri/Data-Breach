@@ -1,6 +1,9 @@
 // https://stackoverflow.com/a/44661975
 
-var imported_data = require('json!./../../data/plotting_file.json');
+// var imported_data = require('../data/plotting_file.json');
+define(function (require) {
+   var imported_data = require('../data/plotting_file.json');
+});
 
 var ctx = document.getElementById('myChart').getContext('2d');
 var scatterChart = new Chart(ctx, {
