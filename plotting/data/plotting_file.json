@@ -544,6 +544,8 @@
     "datasets": [
         {
             "label": "Legend",
+            "pointBackgroundColor": "purple",
+            "pointHoverBackgroundColor": "red",
             "data": [
                 {
                     "x": 669081331,
