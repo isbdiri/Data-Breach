@@ -543,9 +543,11 @@
     ],
     "datasets": [
         {
-            "label": "Legend",
-            "pointBackgroundColor": "purple",
+            "backgroundColor": "purple",
+            "pointBackgroundColor": "#80008069",
             "pointHoverBackgroundColor": "red",
+            "pointHoverRadius": "5",
+            "label": "Organisation",
             "data": [
                 {
                     "x": 669081331,
