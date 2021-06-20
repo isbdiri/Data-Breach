@@ -53,3 +53,11 @@ Date,Org,Category,breach_count,type
 04-2020,Nintendo,consumer electronics and video game company,0.3,"[Account passwords, Account owner name, DOB, Email addresses, Country of residence]"
 09-2020,Mailfire,email marketing software,0.1,"[Name, Age, DOB, Gender, Location of message senders, IP addresses, Member profile pictures, Member bio descriptions]"
 03-2020,Antheus Tecnologia,biometrics company,0.076,[fingerprint records]
+10-2016,Hitachi Payment Services System,payment services,3.2,"[debit card number, PIN]"
+01-2019,SBI,bank,3.5,"[mobile numbers, partial account numbers, account balance, transaction details]"
+04-2019,Justdial,search engine,100,"[names, mobile numbers, email ids, occupations, addresses]"
+10-2019,Multiple Indian Banks,bank,1.3,"[names, emails, phone numbers, addresses]"
+11-2020,BigBasket,online grocer,20,"[email id, phone numbers, order details, addresses]"
+05-2020,Unacademy,education,20,"[IDs, passwords, date joined, last login date, email IDs, names, user credentials]"
+05-2021,Air India,airlines,4.5,"[passport, credit card details, birth dates, name, ticket information]"
+05-2021,Dominos,food chain,180,"[order details, email addresses, phone numbers, credit card details]"
