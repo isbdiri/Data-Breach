@@ -1,9 +1,8 @@
 Date,Org,Category,breach_count,type
 10-2017,Yahoo,web services,3000,"[ Security questions, security answers]"
-03-2018,UIDAI,,1100,"[ Names, Aadhar number, bank details]"
+03-2018,UIDAI,AADHAR,1100,"[ Names, Aadhar number, bank details]"
 04-2019,Facebook,social media,540,"[comments, likes, reactions, account names, FB Ids]"
 2014,Yahoo,web services,500,"[names, email addresses, phone numbers, hashed passwords, birth dates, security questions, security answers]"
-11-2018,Starwood (Marriott),,500,"[names, contact information, passport number, Starwood Preferred Guest numbers, travel information]"
 06-2013,MySpace,social media,360,"[owner’s listed name, username, birthdate]"
 06-2018,Exactis,web services,340,"[phone numbers, home, and email addresses, interests, the number of children, age of children, gender of their children]"
 05-2018,Twitter,social media,330,[password]
@@ -15,7 +14,7 @@ Date,Org,Category,breach_count,type
 09-2017,Equifax,web services,148,"[names, home addresses, phone numbers, dates of birth, social security numbers, driver’s license numbers, credit card information]"
 03-2014,ebay,e commerce,145,"[names, e-mail addresses, physical addresses, phone numbers, dates of birth, password]"
 05-2019,Canva,web services,137,"[email addresses, names, usernames, cities, passwords]"
-06-2128,Apollo,health,126,"[names, email addresses, place of employment, roles held, location]"
+06-2018,Apollo,health,126,"[names, email addresses, place of employment, roles held, location]"
 06-2013,Badoo,web services,112,"[names, birthdates, passwords, email addresses]"
 08-2013,Evite,web services,101,"[email addresses, phone numbers, names, physical addresses, dates of birth, genders, passwords]"
 12-2018,Quora,social media,100,"[names, email addresses, encrypted passwords]"
