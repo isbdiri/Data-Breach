@@ -1,6 +1,7 @@
 
 
 var ctx = document.getElementById("myChart").getContext('2d');
+var ctx2 = document.getElementById("myChart_mean").getContext('2d');
 
 var imported_data = $.getJSON("../data/plotting_file2.json", function(){
     console.log("imported")
@@ -113,10 +114,17 @@ function onJSONLoad(jsonData){
           //     hoverBackgroundColor: "#ff6384"
           // }
           // ]
-        datasets:  jsonData.dataset
+        datasets:  jsonData.dataset1
       }
     }
     new Chart(ctx, options);
+    var options = {
+      type: 'bubble',
+      data: {
+        datasets:  jsonData.dataset2
+      }
+    }
+    new Chart(ctx2, options);
 }
 
 // var ctx = document.getElementById('chartJSContainer').getContext('2d');
