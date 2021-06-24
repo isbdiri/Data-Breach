@@ -1,0 +1,130 @@
+count,Class,
+533,Email addresses,
+441,Passwords,passwords
+300,Usernames,
+238,IP addresses,
+237,Names,
+142,Dates of birth,age
+138,Phone numbers,
+112,Physical addresses,geolocation
+96,Genders,
+76,Website activity,
+74,Geographic locations,geolocation
+27,Social media profiles,
+26,Private messages,messages
+23,Employers,
+20,Job titles,
+19,Purchases,
+14,Spoken languages,
+14,Partial credit card data,
+12,Device information,device info
+12,Security questions and answers,
+10,Browser user agent details,device info
+9,Marital statuses,relationship status
+9,Payment histories,financial info
+9,Income levels,financial info
+9,Government issued IDs,
+8,Email messages,messages
+8,Instant messenger identities,
+7,Auth tokens,
+7,Avatars,
+7,Ethnicities,demographics
+7,Account balances,financial info
+7,Physical attributes,
+6,Sexual orientations,
+6,Salutations,demographics
+6,Education levels,education
+6,Family structure,demographics
+5,Bios,device info
+5,Home ownership statuses,financial info
+5,Credit cards,financial info
+5,User website URLs,
+5,Historical passwords,passwords
+5,Credit status information,financial info
+5,Religions,demographics
+5,Bank account numbers,financial info
+5,Social connections,
+5,Time zones,geolocation
+4,Relationship statuses,relationship status
+4,Drinking habits,
+4,Smoking habits,
+4,Passport numbers,
+3,Partial dates of birth,age
+3,Profile photos,
+3,Personal descriptions,
+3,Family members' names,
+3,Social security numbers,
+3,Occupations,
+3,Nationalities,demographics
+3,Age groups,age
+2,IMEI numbers,device info
+2,IMSI numbers,device info
+2,Homepage URLs,
+2,Ages,age
+2,Personal interests,
+2,Financial transactions,financial info
+2,Financial investments,financial info
+2,Net worths,financial info
+2,Vehicle details,
+2,Job applications,
+2,Sexual fetishes,
+2,Health insurance information,
+2,Personal health data,
+2,Nicknames,
+2,Drug habits,
+2,Political views,
+2,Chat logs,
+2,PINs,
+2,SMS messages,
+1,Password hints,
+1,Races,
+1,Address book contacts,
+1,Apps installed on devices,
+1,Cellular network names,
+1,Employment statuses,
+1,Beauty ratings,
+1,Car ownership statuses,
+1,Survey results,
+1,Career levels,
+1,Taxation records,
+1,Payment methods,
+1,Biometric data,
+1,Buying preferences,
+1,Charitable donations,
+1,Political donations,
+1,Eating habits,
+1,Deceased date,
+1,Utility bills,
+1,Purchasing habits,
+1,School grades (class levels),
+1,Encrypted keys,
+1,Mnemonic phrases,
+1,Professional skills,
+1,Years of professional experience,
+1,Recovery email addresses,
+1,Living costs,
+1,Mothers maiden names,
+1,Places of birth,
+1,Spouses names,
+1,Deceased statuses,
+1,Astrological signs,
+1,Fitness levels,
+1,Parenting plans,
+1,Travel habits,
+1,Work habits,
+1,Device usage tracking data,
+1,User statuses,
+1,Home loan information,
+1,Licence plates,
+1,Customer feedback,
+1,Credit card CVV,
+1,Password strengths,
+1,Audio recordings,
+1,Browsing histories,
+1,Photos,
+1,Support tickets,
+1,Customer interactions,
+1,MAC addresses,
+1,Device serial numbers,
+1,Login histories,
+1,Reward program balances,

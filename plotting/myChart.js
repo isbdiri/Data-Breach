@@ -114,7 +114,7 @@ function onJSONLoad(jsonData){
           //     hoverBackgroundColor: "#ff6384"
           // }
           // ]
-        datasets:  jsonData.dataset1
+		 datasets:  jsonData.dataset1
       }
     }
     new Chart(ctx, options);

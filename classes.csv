@@ -1,0 +1,130 @@
+,count,Class
+0,533,Email addresses
+1,238,IP addresses
+2,237,Names
+3,441,Passwords
+4,138,Phone numbers
+5,112,Physical addresses
+6,300,Usernames
+7,12,Device information
+8,142,Dates of birth
+9,96,Genders
+10,74,Geographic locations
+11,23,Employers
+12,20,Job titles
+13,27,Social media profiles
+14,1,Password hints
+15,1,Races
+16,4,Relationship statuses
+17,6,Sexual orientations
+18,14,Spoken languages
+19,3,Partial dates of birth
+20,76,Website activity
+21,1,Address book contacts
+22,1,Apps installed on devices
+23,1,Cellular network names
+24,2,IMEI numbers
+25,2,IMSI numbers
+26,3,Profile photos
+27,8,Email messages
+28,2,Homepage URLs
+29,8,Instant messenger identities
+30,6,Salutations
+31,2,Ages
+32,7,Auth tokens
+33,1,Employment statuses
+34,9,Marital statuses
+35,26,Private messages
+36,10,Browser user agent details
+37,5,Bios
+38,7,Avatars
+39,7,Ethnicities
+40,9,Payment histories
+41,12,Security questions and answers
+42,7,Account balances
+43,1,Beauty ratings
+44,1,Car ownership statuses
+45,4,Drinking habits
+46,6,Education levels
+47,5,Home ownership statuses
+48,9,Income levels
+49,3,Personal descriptions
+50,2,Personal interests
+51,7,Physical attributes
+52,4,Smoking habits
+53,5,Credit cards
+54,1,Survey results
+55,1,Career levels
+56,5,User website URLs
+57,19,Purchases
+58,5,Historical passwords
+59,14,Partial credit card data
+60,2,Financial transactions
+61,1,Taxation records
+62,9,Government issued IDs
+63,1,Payment methods
+64,3,Family members' names
+65,1,Biometric data
+66,4,Passport numbers
+67,1,Buying preferences
+68,1,Charitable donations
+69,5,Credit status information
+70,6,Family structure
+71,2,Financial investments
+72,2,Net worths
+73,1,Political donations
+74,3,Social security numbers
+75,1,Eating habits
+76,2,Vehicle details
+77,1,Deceased date
+78,1,Utility bills
+79,2,Job applications
+80,3,Occupations
+81,5,Religions
+82,1,Purchasing habits
+83,2,Sexual fetishes
+84,1,School grades (class levels)
+85,1,Encrypted keys
+86,1,Mnemonic phrases
+87,1,Professional skills
+88,1,Years of professional experience
+89,5,Bank account numbers
+90,5,Social connections
+91,5,Time zones
+92,2,Health insurance information
+93,2,Personal health data
+94,2,Nicknames
+95,3,Nationalities
+96,1,Recovery email addresses
+97,1,Living costs
+98,1,Mothers maiden names
+99,1,Places of birth
+100,1,Spouses names
+101,1,Deceased statuses
+102,1,Astrological signs
+103,2,Drug habits
+104,1,Fitness levels
+105,1,Parenting plans
+106,2,Political views
+107,1,Travel habits
+108,1,Work habits
+109,1,Device usage tracking data
+110,3,Age groups
+111,2,Chat logs
+112,1,User statuses
+113,1,Home loan information
+114,1,Licence plates
+115,1,Customer feedback
+116,2,PINs
+117,1,Credit card CVV
+118,1,Password strengths
+119,1,Audio recordings
+120,1,Browsing histories
+121,1,Photos
+122,2,SMS messages
+123,1,Support tickets
+124,1,Customer interactions
+125,1,MAC addresses
+126,1,Device serial numbers
+127,1,Login histories
+128,1,Reward program balances
