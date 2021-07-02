@@ -1,0 +1,135 @@
+Data Classes,Data Category
+Email addresses,PII
+Passwords,passwords
+Usernames,PII
+IP addresses,device info
+Names,PII
+Dates of birth,age
+Phone numbers,PII
+Physical addresses,geolocation
+Genders,demographics
+Website activity,consumer behavior
+Geographic locations,geolocation
+Social media profiles,"PII,consumer behavior"
+Private messages,personal communication
+Employers,employment history
+Job titles,employment history
+Purchases,consumer behavior
+Spoken languages,demographics
+Partial credit card data,financial info
+Device information,device info
+Security questions and answers,passwords
+Browser user agent details,device info
+Marital statuses,demographics
+Payment histories,financial info
+Income levels,financial info
+Government issued IDs,PII
+Email messages,personal communication
+Instant messenger identities,personal communication
+Auth tokens,passwords
+Avatars,PII
+Ethnicities,demographics
+Account balances,financial info
+Physical attributes,"health,PII"
+Sexual orientations,demographics
+Salutations,demographics
+Education levels,demographics
+Family structure,demographics
+Bios,device info
+Home ownership statuses,financial info
+Credit cards,financial info
+User website URLs,consumer behavior
+Historical passwords,passwords
+Credit status information,financial info
+Religions,demographics
+Bank account numbers,financial info
+Social connections,social
+Time zones,geolocation
+Relationship statuses,demographics
+Drinking habits,health
+Smoking habits,health
+Passport numbers,PII
+Partial dates of birth,age
+Profile photos,PII
+Personal descriptions,PII
+Family members' names,PII
+Social security numbers,PII
+Occupations,employment history
+Nationalities,demographics
+Age groups,age
+IMEI numbers,device info
+IMSI numbers,device info
+Homepage URLs,PII
+Ages,age
+Personal interests,consumer behavior
+Financial transactions,financial info
+Financial investments,financial info
+Net worths,financial info
+Vehicle details,PII
+Job applications,employment history
+Sexual fetishes,demographics
+Health insurance information,health
+Personal health data,health
+Nicknames,PII
+Drug habits,health
+Political views,demographics
+Chat logs,personal communication
+PINs,passwords
+SMS messages,personal communication
+Password hints,passwords
+Races,demographic
+Address book contacts,social
+Apps installed on devices,device info
+Cellular network names,device info
+Employment statuses,employment history
+Beauty ratings,financial info
+Car ownership statuses,"consumer behavior,financial info"
+Survey results,consumer behavior
+Career levels,employment history
+Taxation records,financial info
+Payment methods,consumer behavior
+Biometric data,PII
+Buying preferences,consumer behavior
+Charitable donations,financial info
+Political donations,financial info
+Eating habits,health
+Deceased date,PII
+Utility bills,consumer behavior
+Purchasing habits,consumer behavior
+School grades (class levels),demographics
+Encrypted keys,passwords
+Mnemonic phrases,consumer behavior
+Professional skills,employment history
+Years of professional experience,employment history
+Recovery email addresses,PII
+Living costs,financial info
+Mothers maiden names,PII
+Places of birth,PII
+Spouses names,PII
+Deceased statuses,PII
+Astrological signs,PII
+Fitness levels,health
+Parenting plans,health
+Travel habits,consumer behavior
+Work habits,employment history
+Device usage tracking data,device info
+User statuses,demographics
+Home loan information,"consumer behavior,financial info"
+Licence plates,PII
+Customer feedback,consumer behavior
+Credit card CVV,financial info
+Password strengths,passwords
+Audio recordings,PII
+Browsing histories,consumer behavior
+Photos,PII
+Support tickets,consumer behavior
+Customer interactions,consumer behavior
+MAC addresses,device info
+Device serial numbers,device info
+Login histories,"password,consumer behavior"
+Reward program balances,"financial info,consumer behavior"
+Aadhar number,PII
+driver’s license numbers,PII
+debit card number,financial info
+date joined,consumer behavior
+last login date,consumer behavior
