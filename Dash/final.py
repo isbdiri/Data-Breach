@@ -10,10 +10,20 @@ import dash_html_components as html
 
 app = dash.Dash(__name__,external_stylesheets=[dbc.themes.GRID])
 
+#####################################################################
+#################### Text to be written on page #####################
+#####################################################################
+
+heading_of_page = "HHHHHEEEEAAADDDIIINNNGGG"
+
 explaination_text = """Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisi odio, iaculis at aliquam quis, sagittis quis quam. Vestibulum malesuada, leo vel maximus dignissim, justo felis dictum purus, eget convallis massa metus at purus. Vestibulum elementum leo vitae risus hendrerit pharetra. Proin magna nisi, maximus in quam sit amet, malesuada sollicitudin massa. Maecenas malesuada enim vel nulla congue euismod. Nulla facilisi. Pellentesque sit amet convallis nisl, sit amet interdum tortor. Cras a nulla consequat, scelerisque felis vitae, gravida quam. Phasellus varius, ipsum eu luctus pulvinar, est lectus luctus nunc, eu efficitur lectus massa et erat.
 
 
 Proin eget venenatis nisi. Integer mollis ornare quam, ac finibus justo malesuada quis. Nam efficitur ut mauris sit amet tempus. Donec vel purus mauris. Aliquam et orci non lorem tincidunt elementum. Nullam sollicitudin egestas nisl ut fermentum. Duis auctor risus sit amet diam vulputate, tincidunt bibendum quam suscipit."""
+
+#####################################################################
+##################### Graphs to be plotted ##########################
+#####################################################################
 def Network_Plot():
     with open('../collect_data/final/network_data.json', 'r') as openfile:
         # Reading from json file
@@ -38,9 +48,12 @@ def Scatter_Plot():
                  hover_data=['Org'])
     return fig
 
+#####################################################################
+############################ App Layout #############################
+#####################################################################
 app.layout = html.Div(
     [
-        html.H1("HHHHHEEEEAAADDDIIINNNGGG"),
+        html.H1(heading_of_page),
         dbc.Row(
             [
                 dbc.Col([
