@@ -1,6 +1,6 @@
 Date,Org,category,breach_count(Million),employee_count,data_classes
 10-2017,Yahoo,web services,3000,8600,Security questions and answers
-03-2018,UIDAI,AADHAR,1100,,"Names,Aadhar number,Bank account numbers"
+03-2018,UIDAI,public welfare,1100,,"Names,Aadhar number,Bank account numbers"
 2014,Yahoo,web services,500,8600,"Names,Email addresses,Phone numbers,Passwords,Dates of birth,Security questions and answers"
 06-2013,MySpace,social media,360,150,"Names,Usernames,Dates of birth"
 06-2018,Exactis,web services,340,,"Phone numbers,Physical addresses,Email addresses,Personal interests,Family structure,Family members' names"
@@ -28,3 +28,7 @@ Date,Org,category,breach_count(Million),employee_count,data_classes
 05-2020,Unacademy,education,20,4859,"Usernames,Passwords,date joined,last login date,Email addresses,Names,Passwords"
 05-2021,Air India,airlines,4.5,9993,"Passport numbers,Credit cards,Dates of birth,Names,Purchases"
 05-2021,Dominos,e commerce,180,14400,"Purchases,Email addresses,Phone numbers,Credit cards"
+05-2021,IIM [CAT exam],education,0.19,,"Email addresses,Names,Dates of birth,Phone numbers,Physical addresses,Education levels"
+02-2021,BPSSC Police exam,public welfare,0.5,1600,"Email addresses,Names,Dates of birth,Phone numbers,Physical addresses,Genders"
+01-2021,CoWIN,public welfare,0.0015,,"Names,Genders,Physical addresses,Ages,Personal health data"
+01-2021,Juspay,web services,35,350,Partial credit card data

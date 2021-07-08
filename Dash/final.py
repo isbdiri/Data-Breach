@@ -33,7 +33,7 @@ def Network_Plot():
                             id='cytoscape',
                             elements=json_object,
                             layout={'name': 'circle'},
-                            style={'width': '100%', 'height': '800px'}
+                            style={'width': '80%', 'height': '500px'}
                             )
     return final
 
@@ -59,15 +59,18 @@ app.layout = html.Div(
                 dbc.Col([
                         html.Div(dcc.Markdown(explaination_text)),
                         Network_Plot()
-                        ], width=8),
+                        ], width=7),
                 # dbc.Col(html.Div("One of three columns"), width=3),
                 dbc.Col([
                             dcc.Graph(figure=Scatter_Plot()),
                             dcc.Graph(figure=Bar_Graph()),
-                        ], width=4), 
+                        ], width=5), 
             ],
         ),
-    ]
+    ],
+    style={
+                "padding": "2%"
+            }
 )
 
 app.run_server(debug=True)

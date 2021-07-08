@@ -1,12 +1,12 @@
 ,exposure_index,employee_count,category,Org
 0,8.006367567650246,8600,web services,Yahoo
-1,8.101677747454572,145,AADHAR,UIDAI
+1,8.101677747454572,527,public welfare,UIDAI
 2,8.006367567650246,8600,web services,Yahoo
 3,6.984716320118266,150,social media,MySpace
-4,7.620705086838262,324,web services,Exactis
+4,7.620705086838262,486,web services,Exactis
 5,5.799092654460526,5500,social media,Twitter
 6,6.410174881966167,22516,e commerce,Adobe
-7,6.396929655216146,605,health,MyFitnessPal
+7,6.396929655216146,978,health,MyFitnessPal
 8,6.943122422819428,11200,web services,Equifax
 9,6.76849321164863,13300,e commerce,ebay
 10,6.529418838262226,1500,web services,Canva
@@ -16,15 +16,19 @@
 14,5.541263545158426,44641,entertainment,Dailymotion
 15,4.927253685157205,2548,web services,Dropbox
 16,4.882801922586371,411,social media,tumblr
-17,3.8958936234982624,613,e commerce,Bonobos
+17,3.8958936234982624,26,e commerce,Bonobos
 18,2.028148247292285,10300,web services,Pixlr
 19,0.4054651081081644,2532,web services,Zoom
 20,0.4054651081081644,6547,entertainment,Nintendo
 21,1.8562979903656263,295941,e commerce,Hitachi Payment Services System
 22,2.6390573296152584,245642,e commerce,SBI
 23,6.214608098422191,10984,web services,Justdial
-24,1.6486586255873816,345,e commerce,Multiple Indian Banks
-25,4.382026634673881,18,e commerce,BigBasket
+24,1.6486586255873816,817,e commerce,Multiple Indian Banks
+25,4.382026634673881,346,e commerce,BigBasket
 26,4.941642422609304,4859,education,Unacademy
 27,3.1135153092103742,9993,airlines,Air India
 28,6.579251212010101,14400,e commerce,Dominos
+29,0.1310282624064042,18,education,IIM [CAT exam]
+30,1.0986122886681098,1600,public welfare,BPSSC Police exam
+31,-4.892852258439873,456,public welfare,CoWIN
+32,3.5553480614894135,350,web services,Juspay
