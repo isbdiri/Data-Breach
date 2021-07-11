@@ -1,0 +1,135 @@
+Data_classes,Data_category,Data_classes_shorterned,Data_classes_shorterned_cleaned
+Aadhar number,PII,Aadhar ,aadhar 
+Account balances,financial info,Account balances,account balances
+Physical addresses,geolocation,Address,address
+Dates of birth,age,age,age
+Partial dates of birth,age,age,age
+Age groups,age,age,age
+Ages,age,age,age
+Astrological signs,PII,age,age
+Apps installed on devices,device info,Apps installed,apps installed
+Audio recordings,PII,Audio recordings,audio recordings
+Avatars,PII,Avatars,avatars
+Bank account numbers,financial info,Bank account ,bank account 
+Beauty ratings,financial info,Beauty ratings,beauty ratings
+Biometric data,PII,Biometrics,biometrics
+Browsing histories,consumer behavior,Browsing histories,browsing histories
+Buying preferences,consumer behavior,Buying preferences,buying preferences
+Car ownership statuses,financial info,Car ownership ,car ownership 
+Cellular network names,device info,Cellular network ,cellular network 
+Chat logs,personal communication,Chat logs,chat logs
+Address book contacts,social,contacts,contacts
+Partial credit card data,financial info,credit card ,credit card 
+Credit cards,financial info,credit card ,credit card 
+Credit status information,financial info,credit card ,credit card 
+Credit card CVV,financial info,credit card ,credit card 
+Customer feedback,consumer behavior,Customer feedback,customer feedback
+Customer interactions,consumer behavior,Customer interactions,customer interactions
+date joined,consumer behavior,date joined,date joined
+debit card number,financial info,debit card ,debit card 
+Deceased date,PII,Deceased date,deceased date
+IP addresses,device info,device info,device info
+Device information,device info,device info,device info
+Security questions and answers,passwords,passwords,passwords
+Browser user agent details,device info,device info,device info
+Bios,device info,device info,device info
+IMEI numbers,device info,device info,device info
+IMSI numbers,device info,device info,device info
+Device usage tracking data,device info,device info,device info
+MAC addresses,device info,device info,device info
+Device serial numbers,device info,device info,device info
+Charitable donations,financial info,donations,donations
+Political donations,financial info,donations,donations
+Drinking habits,health data,Drinking habits,drinking habits
+Eating habits,health data,Eating habits,eating habits
+Education levels,demographics,Education ,education 
+Email addresses,PII,Email addresses,email addresses
+Recovery email addresses,PII,Recovery email addresses,recovery email addresses
+Private messages,personal communication,Emails,emails
+Email messages,personal communication,Emails,emails
+Instant messenger identities,personal communication,Emails,emails
+Ethnicities,demographics,Ethnicities,ethnicities
+Family structure,demographics,Family data,family data
+Family members' names,PII,Family data,family data
+Spouses names,PII,Family data,family data
+Deceased statuses,PII,Family data,family data
+Mothers maiden names,PII,Mothers maiden names,family data
+Payment histories,financial info,Financial transactions,financial transactions
+Financial transactions,financial info,Financial transactions,financial transactions
+Fitness levels,health data,Fitness levels,fitness levels
+Genders,demographics,Gender,gender
+Health insurance information,health data,health data,health data
+Personal health data,health data,health data,health data
+Drug habits,health data,health data,health data
+Home loan information,financial info,Home loan ,home loan 
+Home ownership statuses,financial info,Home ownership ,home ownership 
+Government issued IDs,PII,Identity card,identity card
+Income levels,financial info,Income ,income 
+Living costs,financial info,Income ,income 
+Personal interests,consumer behavior,interests,interests
+Financial investments,financial info,investments,investments
+Employers,employment history,job profile,job profile
+Job titles,employment history,job profile,job profile
+Occupations,employment history,job profile,job profile
+Job applications,employment history,job profile,job profile
+Employment statuses,employment history,job profile,job profile
+Career levels,employment history,job profile,job profile
+Professional skills,employment history,job profile,job profile
+Years of professional experience,employment history,job profile,job profile
+Work habits,employment history,job profile,job profile
+last login date,consumer behavior,last login date,last login date
+Licence plates,PII,license ,license 
+driver’s license numbers,PII,license ,license 
+Geographic locations,geolocation,location,location
+Login histories,password,Login histories,login histories
+Mnemonic phrases,consumer behavior,Mnemonic phrases,mnemonic phrases
+Names,PII,Names,names
+Nationalities,demographics,Nationalities,nationalities
+Net worths,financial info,Net worth,net worth
+Nicknames,PII,Nicknames,nicknames
+Website activity,consumer behavior,online behaviour,online behaviour
+Parenting plans,health data,Parenting plans,parenting plans
+Passport numbers,PII,Passport data,passport data
+Password hints,passwords,Password hints,password hints
+Passwords,passwords,Passwords,passwords
+Auth tokens,passwords,passwords,passwords
+Historical passwords,passwords,Passwords,passwords
+PINs,passwords,passwords,passwords
+Encrypted keys,passwords,Passwords,passwords
+Password strengths,passwords,Passwords,passwords
+Payment methods,consumer behavior,Payment methods,payment methods
+Phone numbers,PII,Phone,phone
+Physical attributes,health data,Physical attributes,physical attributes
+Places of birth,PII,Places of birth,profile data
+Political views,demographics,Political views,political views
+Homepage URLs,PII,Homepage URLs,profile data
+Spoken languages,demographics,languages,profile data
+Profile photos,PII,Profile data,profile data
+Personal descriptions,PII,Profile data,profile data
+Photos,PII,Profile data,profile data
+Purchases,consumer behavior,Purchases,purchases
+Purchasing habits,consumer behavior,Purchases,purchases
+Races,demographics,Races,races
+Relationship statuses,demographics,profile data,profile data
+Religions,demographics,profile data,profile data
+Reward program balances,financial info,Reward program ,reward program 
+Salutations,demographics,profile data,profile data
+School grades (class levels),demographics,School grades ,school grades 
+Sexual fetishes,demographics,Sexual fetishes,sexual fetishes
+Sexual orientations,demographics,Sexual orientations,sexual orientations
+Smoking habits,health data,Smoking habits,smoking habits
+SMS messages,personal communication,messages,messages
+Social connections,social,Social ,social 
+Social media profiles,PI,Social  ,social  
+Marital statuses,demographics,Social  ,social  
+Social security numbers,PII,Social security numbers,identity card
+Support tickets,consumer behavior,Support tickets,support tickets
+Survey results,consumer behavior,Survey results,survey results
+Taxation records,financial info,Taxation ,taxation 
+Time zones,geolocation,Time zones,time zones
+Travel habits,consumer behavior,Travel habits,travel habits
+User statuses,demographics,Profile data,profile data
+User website URLs,consumer behavior,Profile data,profile data
+Usernames,PII,Usernames,usernames
+Utility bills,consumer behavior,bills,bills
+Vehicle details,PII,Vehicle ,vehicle 

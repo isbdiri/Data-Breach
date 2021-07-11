@@ -24,15 +24,28 @@ Proin eget venenatis nisi. Integer mollis ornare quam, ac finibus justo malesuad
 #####################################################################
 ##################### Graphs to be plotted ##########################
 #####################################################################
-def Network_Plot():
+def Network_Plot1():
     with open('../collect_data/final/network_data.json', 'r') as openfile:
         # Reading from json file
         json_object = json.load(openfile)
     final = cyto.Cytoscape(
                             # https://dash.plotly.com/cytoscape/layout
-                            id='cytoscape',
+                            id='cytoscape1',
                             elements=json_object,
                             layout={'name': 'circle'},
+                            style={'width': '80%', 'height': '500px'}
+                            )
+    return final
+
+def Network_Plot2():
+    with open('../collect_data/final/network_clean_data.json', 'r') as openfile:
+        # Reading from json file
+        json_object = json.load(openfile)
+    final = cyto.Cytoscape(
+                            # https://dash.plotly.com/cytoscape/layout
+                            id='cytoscape2',
+                            elements=json_object,
+                            layout={'name': 'breadthfirst'},
                             style={'width': '80%', 'height': '500px'}
                             )
     return final
@@ -58,7 +71,8 @@ app.layout = html.Div(
             [
                 dbc.Col([
                         html.Div(dcc.Markdown(explaination_text)),
-                        Network_Plot()
+                        Network_Plot1(),
+                        Network_Plot2()
                         ], width=7),
                 # dbc.Col(html.Div("One of three columns"), width=3),
                 dbc.Col([
