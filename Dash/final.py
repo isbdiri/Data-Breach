@@ -4,6 +4,7 @@ import json
 import plotly.express as px
 import pandas as pd
 import dash_core_components as dcc
+from dash.dependencies import Input, Output
 import dash_bootstrap_components as dbc
 import dash_cytoscape as cyto
 import dash_html_components as html
@@ -50,9 +51,9 @@ def Network_Plot2():
                             )
     return final
 
-def Bar_Graph():
+def Bar_Graph(input_val):
     group_by_year = pd.read_csv("../collect_data/final/year_bar_chart.csv")
-    final = px.bar(group_by_year, x="year", y="Date")
+    final = px.bar(group_by_year, x="year", y=input_val)
     return final
 
 def Scatter_Plot():
@@ -122,14 +123,13 @@ def Overview_of_scatter():
 def displayClick(btn1, btn2, btn3):
     changed_id = [p['prop_id'] for p in dash.callback_context.triggered][0]
     if 'btn-nclicks-1' in changed_id:
-        msg = 'Button 1 was most recently clicked'
+        return dcc.Graph(figure=Bar_Graph("count"))
     elif 'btn-nclicks-2' in changed_id:
-        msg = 'Button 2 was most recently clicked'
+        return dcc.Graph(figure=Bar_Graph("sum"))
     elif 'btn-nclicks-3' in changed_id:
-        msg = 'Button 3 was most recently clicked'
+        return dcc.Graph(figure=Bar_Graph("info_lost"))
     else:
-        msg = 'None of the buttons have been clicked yet'
-    return html.Div(msg)
+        return dcc.Graph(figure=Bar_Graph("count"))
 
 
 #####################################################################
@@ -147,19 +147,19 @@ app.layout = html.Div(
                         ], width=5),
                 dbc.Col([
                         dbc.Row([
-                                Top_transgressors(3),
+                                dbc.Col(Top_transgressors(3), width=4),
                                 dbc.Col([
                                         Overview_of_scatter(),
                                         dcc.Graph(figure=Scatter_Plot())
                                         ])
                                 ]),
                         dbc.Row([
-                            html.Button('Button 1', id='btn-nclicks-1', n_clicks=0),
-                            html.Button('Button 2', id='btn-nclicks-2', n_clicks=0),
-                            html.Button('Button 3', id='btn-nclicks-3', n_clicks=0),
-                            html.Div(id='container-button-timestamp')
-                        ])
-                        dcc.Graph(figure=Bar_Graph()),
+                            dbc.Col(html.Button('Breach count', id='btn-nclicks-1', n_clicks=0)),
+                            dbc.Col(html.Button('Individuals impacted', id='btn-nclicks-2', n_clicks=0)),
+                            dbc.Col(html.Button('Information lost', id='btn-nclicks-3', n_clicks=0)),
+                        ]),
+                        html.Div(id='container-button-timestamp'),
+                        # dcc.Graph(figure=Bar_Graph("count")),
                         ], width=7), 
             ],
         ),
