@@ -131,7 +131,10 @@ def displayClick(btn1, btn2, btn3):
     else:
         return dcc.Graph(figure=Bar_Graph("count"))
 
-
+@app.callback(Output('container-trangressor-count', 'children'),
+                Input('num-multi', 'value'))
+def changeCount(x):
+    return Top_transgressors(x)
 #####################################################################
 ############################ App Layout #############################
 #####################################################################
@@ -147,7 +150,16 @@ app.layout = html.Div(
                         ], width=5),
                 dbc.Col([
                         dbc.Row([
-                                dbc.Col(Top_transgressors(3), width=4),
+                                dbc.Col([
+                                        dcc.Input(
+                                                id='num-multi',
+                                                type='number',
+                                                value=3,
+                                                min = 1,
+                                                max = 10
+                                                ),
+                                        html.Div(id='container-trangressor-count')
+                                        ], width=5),
                                 dbc.Col([
                                         Overview_of_scatter(),
                                         dcc.Graph(figure=Scatter_Plot())
