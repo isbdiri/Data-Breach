@@ -4,10 +4,11 @@ import json
 import plotly.express as px
 import pandas as pd
 import dash_core_components as dcc
-from dash.dependencies import Input, Output
+from dash.dependencies import Input, Output,State
 import dash_bootstrap_components as dbc
 import dash_cytoscape as cyto
 import dash_html_components as html
+import visdcc
 
 app = dash.Dash(__name__,external_stylesheets=[dbc.themes.GRID])
 
@@ -42,13 +43,8 @@ def Network_Plot2():
     with open('../collect_data/final/network_clean_data.json', 'r') as openfile:
         # Reading from json file
         json_object = json.load(openfile)
-    final = cyto.Cytoscape(
-                            # https://dash.plotly.com/cytoscape/layout
-                            id='cytoscape2',
-                            elements=json_object,
-                            layout={'name': 'breadthfirst'},
-                            style={'width': '80%', 'height': '500px'}
-                            )
+    final = visdcc.Network(data = json_object,
+                    id = 'network-graph', options= dict(height= '900px', width= '60%'))
     return final
 
 def Bar_Graph(input_val):
@@ -146,7 +142,6 @@ app.layout = html.Div(
                 dbc.Col([
                         html.Div(dcc.Markdown(explaination_text)),
                         Network_Plot1(),
-                        Network_Plot2()
                         ], width=5),
                 dbc.Col([
                         dbc.Row([
@@ -175,6 +170,7 @@ app.layout = html.Div(
                         ], width=7), 
             ],
         ),
+        Network_Plot2(),
     ],
     style={
                 "padding": "2%"

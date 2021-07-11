@@ -1,2912 +1,647 @@
-[
-    {
-        "data": {
-            "source": "aadhar ",
-            "target": "bank account "
-        }
-    },
-    {
-        "data": {
-            "source": "aadhar ",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
+{
+    "nodes": [
+        {
             "id": "aadhar ",
             "label": "aadhar "
-        }
-    },
-    {
-        "data": {
-            "source": "account balances",
-            "target": "bank account "
-        }
-    },
-    {
-        "data": {
-            "source": "account balances",
-            "target": "financial transactions"
-        }
-    },
-    {
-        "data": {
-            "source": "account balances",
-            "target": "phone"
-        }
-    },
-    {
-        "data": {
+        },
+        {
             "id": "account balances",
             "label": "account balances"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "age"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "age"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "age"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "age"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "age"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "age"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "buying preferences"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "credit card "
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "credit card "
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "passwords"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "passwords"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "passwords"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "passwords"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "education "
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "family data"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "gender"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "gender"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "health data"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "identity card"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "interests"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "job profile"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "job profile"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "license "
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "location"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "phone"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "phone"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "phone"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "phone"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "phone"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "phone"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "phone"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "purchases"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "purchases"
-        }
-    },
-    {
-        "data": {
-            "source": "address",
-            "target": "usernames"
-        }
-    },
-    {
-        "data": {
+        },
+        {
             "id": "address",
             "label": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "age",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "age",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "age",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "age",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "age",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "age",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "age",
-            "target": "credit card "
-        }
-    },
-    {
-        "data": {
-            "source": "age",
-            "target": "credit card "
-        }
-    },
-    {
-        "data": {
-            "source": "age",
-            "target": "passwords"
-        }
-    },
-    {
-        "data": {
-            "source": "age",
-            "target": "passwords"
-        }
-    },
-    {
-        "data": {
-            "source": "age",
-            "target": "passwords"
-        }
-    },
-    {
-        "data": {
-            "source": "age",
-            "target": "education "
-        }
-    },
-    {
-        "data": {
-            "source": "age",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "age",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "age",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "age",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "age",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "age",
-            "target": "gender"
-        }
-    },
-    {
-        "data": {
-            "source": "age",
-            "target": "gender"
-        }
-    },
-    {
-        "data": {
-            "source": "age",
-            "target": "health data"
-        }
-    },
-    {
-        "data": {
-            "source": "age",
-            "target": "identity card"
-        }
-    },
-    {
-        "data": {
-            "source": "age",
-            "target": "license "
-        }
-    },
-    {
-        "data": {
-            "source": "age",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "age",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "age",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "age",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "age",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "age",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "age",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "age",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "age",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "age",
-            "target": "passport data"
-        }
-    },
-    {
-        "data": {
-            "source": "age",
-            "target": "phone"
-        }
-    },
-    {
-        "data": {
-            "source": "age",
-            "target": "phone"
-        }
-    },
-    {
-        "data": {
-            "source": "age",
-            "target": "phone"
-        }
-    },
-    {
-        "data": {
-            "source": "age",
-            "target": "phone"
-        }
-    },
-    {
-        "data": {
-            "source": "age",
-            "target": "phone"
-        }
-    },
-    {
-        "data": {
-            "source": "age",
-            "target": "purchases"
-        }
-    },
-    {
-        "data": {
-            "source": "age",
-            "target": "usernames"
-        }
-    },
-    {
-        "data": {
+        },
+        {
             "id": "age",
             "label": "age"
-        }
-    },
-    {
-        "data": {
-            "source": "bank account ",
-            "target": "aadhar "
-        }
-    },
-    {
-        "data": {
-            "source": "bank account ",
-            "target": "account balances"
-        }
-    },
-    {
-        "data": {
-            "source": "bank account ",
-            "target": "financial transactions"
-        }
-    },
-    {
-        "data": {
-            "source": "bank account ",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "bank account ",
-            "target": "phone"
-        }
-    },
-    {
-        "data": {
+        },
+        {
             "id": "bank account ",
             "label": "bank account "
-        }
-    },
-    {
-        "data": {
-            "source": "buying preferences",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "buying preferences",
-            "target": "credit card "
-        }
-    },
-    {
-        "data": {
-            "source": "buying preferences",
-            "target": "purchases"
-        }
-    },
-    {
-        "data": {
+        },
+        {
             "id": "buying preferences",
             "label": "buying preferences"
-        }
-    },
-    {
-        "data": {
-            "source": "credit card ",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "credit card ",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "credit card ",
-            "target": "age"
-        }
-    },
-    {
-        "data": {
-            "source": "credit card ",
-            "target": "age"
-        }
-    },
-    {
-        "data": {
-            "source": "credit card ",
-            "target": "buying preferences"
-        }
-    },
-    {
-        "data": {
-            "source": "credit card ",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "credit card ",
-            "target": "identity card"
-        }
-    },
-    {
-        "data": {
-            "source": "credit card ",
-            "target": "license "
-        }
-    },
-    {
-        "data": {
-            "source": "credit card ",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "credit card ",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "credit card ",
-            "target": "passport data"
-        }
-    },
-    {
-        "data": {
-            "source": "credit card ",
-            "target": "phone"
-        }
-    },
-    {
-        "data": {
-            "source": "credit card ",
-            "target": "phone"
-        }
-    },
-    {
-        "data": {
-            "source": "credit card ",
-            "target": "purchases"
-        }
-    },
-    {
-        "data": {
-            "source": "credit card ",
-            "target": "purchases"
-        }
-    },
-    {
-        "data": {
-            "source": "credit card ",
-            "target": "purchases"
-        }
-    },
-    {
-        "data": {
+        },
+        {
             "id": "credit card ",
             "label": "credit card "
-        }
-    },
-    {
-        "data": {
-            "source": "date joined",
-            "target": "passwords"
-        }
-    },
-    {
-        "data": {
-            "source": "date joined",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "date joined",
-            "target": "last login date"
-        }
-    },
-    {
-        "data": {
-            "source": "date joined",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "date joined",
-            "target": "usernames"
-        }
-    },
-    {
-        "data": {
+        },
+        {
             "id": "date joined",
             "label": "date joined"
-        }
-    },
-    {
-        "data": {
-            "source": "debit card ",
-            "target": "passwords"
-        }
-    },
-    {
-        "data": {
+        },
+        {
             "id": "debit card ",
             "label": "debit card "
-        }
-    },
-    {
-        "data": {
-            "source": "device info",
-            "target": "passwords"
-        }
-    },
-    {
-        "data": {
-            "source": "device info",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "device info",
-            "target": "usernames"
-        }
-    },
-    {
-        "data": {
+        },
+        {
             "id": "device info",
             "label": "device info"
-        }
-    },
-    {
-        "data": {
-            "source": "passwords",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "passwords",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "passwords",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "passwords",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "passwords",
-            "target": "age"
-        }
-    },
-    {
-        "data": {
-            "source": "passwords",
-            "target": "age"
-        }
-    },
-    {
-        "data": {
-            "source": "passwords",
-            "target": "age"
-        }
-    },
-    {
-        "data": {
-            "source": "passwords",
-            "target": "date joined"
-        }
-    },
-    {
-        "data": {
-            "source": "passwords",
-            "target": "debit card "
-        }
-    },
-    {
-        "data": {
-            "source": "passwords",
-            "target": "device info"
-        }
-    },
-    {
-        "data": {
-            "source": "passwords",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "passwords",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "passwords",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "passwords",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "passwords",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "passwords",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "passwords",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "passwords",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "passwords",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "passwords",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "passwords",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "passwords",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "passwords",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "passwords",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "passwords",
-            "target": "last login date"
-        }
-    },
-    {
-        "data": {
-            "source": "passwords",
-            "target": "location"
-        }
-    },
-    {
-        "data": {
-            "source": "passwords",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "passwords",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "passwords",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "passwords",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "passwords",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "passwords",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "passwords",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "passwords",
-            "target": "password hints"
-        }
-    },
-    {
-        "data": {
-            "source": "passwords",
-            "target": "phone"
-        }
-    },
-    {
-        "data": {
-            "source": "passwords",
-            "target": "phone"
-        }
-    },
-    {
-        "data": {
-            "source": "passwords",
-            "target": "usernames"
-        }
-    },
-    {
-        "data": {
-            "source": "passwords",
-            "target": "usernames"
-        }
-    },
-    {
-        "data": {
-            "source": "passwords",
-            "target": "usernames"
-        }
-    },
-    {
-        "data": {
-            "source": "passwords",
-            "target": "usernames"
-        }
-    },
-    {
-        "data": {
-            "source": "passwords",
-            "target": "usernames"
-        }
-    },
-    {
-        "data": {
-            "source": "passwords",
-            "target": "usernames"
-        }
-    },
-    {
-        "data": {
-            "source": "passwords",
-            "target": "usernames"
-        }
-    },
-    {
-        "data": {
-            "source": "passwords",
-            "target": "usernames"
-        }
-    },
-    {
-        "data": {
+        },
+        {
             "id": "passwords",
             "label": "passwords"
-        }
-    },
-    {
-        "data": {
-            "source": "education ",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "education ",
-            "target": "age"
-        }
-    },
-    {
-        "data": {
-            "source": "education ",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "education ",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "education ",
-            "target": "phone"
-        }
-    },
-    {
-        "data": {
+        },
+        {
             "id": "education ",
             "label": "education "
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "age"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "age"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "age"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "age"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "age"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "credit card "
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "date joined"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "device info"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "passwords"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "passwords"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "passwords"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "passwords"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "passwords"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "passwords"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "passwords"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "passwords"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "passwords"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "passwords"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "passwords"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "passwords"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "passwords"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "passwords"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "education "
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "family data"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "gender"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "interests"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "job profile"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "job profile"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "last login date"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "location"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "location"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "password hints"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "phone"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "phone"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "phone"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "phone"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "phone"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "phone"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "phone"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "phone"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "purchases"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "purchases"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "usernames"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "usernames"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "usernames"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "usernames"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "usernames"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "usernames"
-        }
-    },
-    {
-        "data": {
-            "source": "email addresses",
-            "target": "usernames"
-        }
-    },
-    {
-        "data": {
+        },
+        {
             "id": "email addresses",
             "label": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "family data",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "family data",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "family data",
-            "target": "interests"
-        }
-    },
-    {
-        "data": {
-            "source": "family data",
-            "target": "phone"
-        }
-    },
-    {
-        "data": {
+        },
+        {
             "id": "family data",
             "label": "family data"
-        }
-    },
-    {
-        "data": {
-            "source": "financial transactions",
-            "target": "account balances"
-        }
-    },
-    {
-        "data": {
-            "source": "financial transactions",
-            "target": "bank account "
-        }
-    },
-    {
-        "data": {
-            "source": "financial transactions",
-            "target": "phone"
-        }
-    },
-    {
-        "data": {
+        },
+        {
             "id": "financial transactions",
             "label": "financial transactions"
-        }
-    },
-    {
-        "data": {
-            "source": "gender",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "gender",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "gender",
-            "target": "age"
-        }
-    },
-    {
-        "data": {
-            "source": "gender",
-            "target": "age"
-        }
-    },
-    {
-        "data": {
-            "source": "gender",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "gender",
-            "target": "health data"
-        }
-    },
-    {
-        "data": {
-            "source": "gender",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "gender",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "gender",
-            "target": "phone"
-        }
-    },
-    {
-        "data": {
+        },
+        {
             "id": "gender",
             "label": "gender"
-        }
-    },
-    {
-        "data": {
-            "source": "health data",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "health data",
-            "target": "age"
-        }
-    },
-    {
-        "data": {
-            "source": "health data",
-            "target": "gender"
-        }
-    },
-    {
-        "data": {
-            "source": "health data",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
+        },
+        {
             "id": "health data",
             "label": "health data"
-        }
-    },
-    {
-        "data": {
-            "source": "identity card",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "identity card",
-            "target": "age"
-        }
-    },
-    {
-        "data": {
-            "source": "identity card",
-            "target": "credit card "
-        }
-    },
-    {
-        "data": {
-            "source": "identity card",
-            "target": "license "
-        }
-    },
-    {
-        "data": {
-            "source": "identity card",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "identity card",
-            "target": "phone"
-        }
-    },
-    {
-        "data": {
+        },
+        {
             "id": "identity card",
             "label": "identity card"
-        }
-    },
-    {
-        "data": {
-            "source": "interests",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "interests",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "interests",
-            "target": "family data"
-        }
-    },
-    {
-        "data": {
-            "source": "interests",
-            "target": "phone"
-        }
-    },
-    {
-        "data": {
+        },
+        {
             "id": "interests",
             "label": "interests"
-        }
-    },
-    {
-        "data": {
-            "source": "job profile",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "job profile",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "job profile",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "job profile",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "job profile",
-            "target": "location"
-        }
-    },
-    {
-        "data": {
-            "source": "job profile",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "job profile",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "job profile",
-            "target": "phone"
-        }
-    },
-    {
-        "data": {
+        },
+        {
             "id": "job profile",
             "label": "job profile"
-        }
-    },
-    {
-        "data": {
-            "source": "last login date",
-            "target": "date joined"
-        }
-    },
-    {
-        "data": {
-            "source": "last login date",
-            "target": "passwords"
-        }
-    },
-    {
-        "data": {
-            "source": "last login date",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "last login date",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "last login date",
-            "target": "usernames"
-        }
-    },
-    {
-        "data": {
+        },
+        {
             "id": "last login date",
             "label": "last login date"
-        }
-    },
-    {
-        "data": {
-            "source": "license ",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "license ",
-            "target": "age"
-        }
-    },
-    {
-        "data": {
-            "source": "license ",
-            "target": "credit card "
-        }
-    },
-    {
-        "data": {
-            "source": "license ",
-            "target": "identity card"
-        }
-    },
-    {
-        "data": {
-            "source": "license ",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "license ",
-            "target": "phone"
-        }
-    },
-    {
-        "data": {
+        },
+        {
             "id": "license ",
             "label": "license "
-        }
-    },
-    {
-        "data": {
-            "source": "location",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "location",
-            "target": "passwords"
-        }
-    },
-    {
-        "data": {
-            "source": "location",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "location",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "location",
-            "target": "job profile"
-        }
-    },
-    {
-        "data": {
-            "source": "location",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "location",
-            "target": "usernames"
-        }
-    },
-    {
-        "data": {
+        },
+        {
             "id": "location",
             "label": "location"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "aadhar "
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "age"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "age"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "age"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "age"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "age"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "age"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "age"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "age"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "age"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "bank account "
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "credit card "
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "credit card "
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "date joined"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "passwords"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "passwords"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "passwords"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "passwords"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "passwords"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "passwords"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "passwords"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "education "
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "gender"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "gender"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "health data"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "identity card"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "job profile"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "job profile"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "last login date"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "license "
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "location"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "passport data"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "phone"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "phone"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "phone"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "phone"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "phone"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "phone"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "purchases"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "usernames"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "usernames"
-        }
-    },
-    {
-        "data": {
-            "source": "names",
-            "target": "usernames"
-        }
-    },
-    {
-        "data": {
+        },
+        {
             "id": "names",
             "label": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "passport data",
-            "target": "age"
-        }
-    },
-    {
-        "data": {
-            "source": "passport data",
-            "target": "credit card "
-        }
-    },
-    {
-        "data": {
-            "source": "passport data",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "passport data",
-            "target": "purchases"
-        }
-    },
-    {
-        "data": {
+        },
+        {
             "id": "passport data",
             "label": "passport data"
-        }
-    },
-    {
-        "data": {
-            "source": "password hints",
-            "target": "passwords"
-        }
-    },
-    {
-        "data": {
-            "source": "password hints",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "password hints",
-            "target": "usernames"
-        }
-    },
-    {
-        "data": {
+        },
+        {
             "id": "password hints",
             "label": "password hints"
-        }
-    },
-    {
-        "data": {
-            "source": "phone",
-            "target": "account balances"
-        }
-    },
-    {
-        "data": {
-            "source": "phone",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "phone",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "phone",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "phone",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "phone",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "phone",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "phone",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "phone",
-            "target": "age"
-        }
-    },
-    {
-        "data": {
-            "source": "phone",
-            "target": "age"
-        }
-    },
-    {
-        "data": {
-            "source": "phone",
-            "target": "age"
-        }
-    },
-    {
-        "data": {
-            "source": "phone",
-            "target": "age"
-        }
-    },
-    {
-        "data": {
-            "source": "phone",
-            "target": "age"
-        }
-    },
-    {
-        "data": {
-            "source": "phone",
-            "target": "bank account "
-        }
-    },
-    {
-        "data": {
-            "source": "phone",
-            "target": "credit card "
-        }
-    },
-    {
-        "data": {
-            "source": "phone",
-            "target": "credit card "
-        }
-    },
-    {
-        "data": {
-            "source": "phone",
-            "target": "passwords"
-        }
-    },
-    {
-        "data": {
-            "source": "phone",
-            "target": "passwords"
-        }
-    },
-    {
-        "data": {
-            "source": "phone",
-            "target": "education "
-        }
-    },
-    {
-        "data": {
-            "source": "phone",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "phone",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "phone",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "phone",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "phone",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "phone",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "phone",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "phone",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "phone",
-            "target": "family data"
-        }
-    },
-    {
-        "data": {
-            "source": "phone",
-            "target": "financial transactions"
-        }
-    },
-    {
-        "data": {
-            "source": "phone",
-            "target": "gender"
-        }
-    },
-    {
-        "data": {
-            "source": "phone",
-            "target": "identity card"
-        }
-    },
-    {
-        "data": {
-            "source": "phone",
-            "target": "interests"
-        }
-    },
-    {
-        "data": {
-            "source": "phone",
-            "target": "job profile"
-        }
-    },
-    {
-        "data": {
-            "source": "phone",
-            "target": "license "
-        }
-    },
-    {
-        "data": {
-            "source": "phone",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "phone",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "phone",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "phone",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "phone",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "phone",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "phone",
-            "target": "purchases"
-        }
-    },
-    {
-        "data": {
-            "source": "phone",
-            "target": "purchases"
-        }
-    },
-    {
-        "data": {
+        },
+        {
             "id": "phone",
             "label": "phone"
-        }
-    },
-    {
-        "data": {
-            "source": "purchases",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "purchases",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "purchases",
-            "target": "age"
-        }
-    },
-    {
-        "data": {
-            "source": "purchases",
-            "target": "buying preferences"
-        }
-    },
-    {
-        "data": {
-            "source": "purchases",
-            "target": "credit card "
-        }
-    },
-    {
-        "data": {
-            "source": "purchases",
-            "target": "credit card "
-        }
-    },
-    {
-        "data": {
-            "source": "purchases",
-            "target": "credit card "
-        }
-    },
-    {
-        "data": {
-            "source": "purchases",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "purchases",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "purchases",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "purchases",
-            "target": "passport data"
-        }
-    },
-    {
-        "data": {
-            "source": "purchases",
-            "target": "phone"
-        }
-    },
-    {
-        "data": {
-            "source": "purchases",
-            "target": "phone"
-        }
-    },
-    {
-        "data": {
+        },
+        {
             "id": "purchases",
             "label": "purchases"
-        }
-    },
-    {
-        "data": {
-            "source": "usernames",
-            "target": "address"
-        }
-    },
-    {
-        "data": {
-            "source": "usernames",
-            "target": "age"
-        }
-    },
-    {
-        "data": {
-            "source": "usernames",
-            "target": "date joined"
-        }
-    },
-    {
-        "data": {
-            "source": "usernames",
-            "target": "device info"
-        }
-    },
-    {
-        "data": {
-            "source": "usernames",
-            "target": "passwords"
-        }
-    },
-    {
-        "data": {
-            "source": "usernames",
-            "target": "passwords"
-        }
-    },
-    {
-        "data": {
-            "source": "usernames",
-            "target": "passwords"
-        }
-    },
-    {
-        "data": {
-            "source": "usernames",
-            "target": "passwords"
-        }
-    },
-    {
-        "data": {
-            "source": "usernames",
-            "target": "passwords"
-        }
-    },
-    {
-        "data": {
-            "source": "usernames",
-            "target": "passwords"
-        }
-    },
-    {
-        "data": {
-            "source": "usernames",
-            "target": "passwords"
-        }
-    },
-    {
-        "data": {
-            "source": "usernames",
-            "target": "passwords"
-        }
-    },
-    {
-        "data": {
-            "source": "usernames",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "usernames",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "usernames",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "usernames",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "usernames",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "usernames",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "usernames",
-            "target": "email addresses"
-        }
-    },
-    {
-        "data": {
-            "source": "usernames",
-            "target": "last login date"
-        }
-    },
-    {
-        "data": {
-            "source": "usernames",
-            "target": "location"
-        }
-    },
-    {
-        "data": {
-            "source": "usernames",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "usernames",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "usernames",
-            "target": "names"
-        }
-    },
-    {
-        "data": {
-            "source": "usernames",
-            "target": "password hints"
-        }
-    },
-    {
-        "data": {
+        },
+        {
             "id": "usernames",
             "label": "usernames"
         }
-    }
-]
+    ],
+    "edges": [
+        {
+            "id": "aadhar -bank account ",
+            "from": "aadhar ",
+            "to": "bank account "
+        },
+        {
+            "id": "aadhar -names",
+            "from": "aadhar ",
+            "to": "names"
+        },
+        {
+            "id": "account balances-bank account ",
+            "from": "account balances",
+            "to": "bank account "
+        },
+        {
+            "id": "account balances-financial transactions",
+            "from": "account balances",
+            "to": "financial transactions"
+        },
+        {
+            "id": "account balances-phone",
+            "from": "account balances",
+            "to": "phone"
+        },
+        {
+            "id": "address-age",
+            "from": "address",
+            "to": "age"
+        },
+        {
+            "id": "address-buying preferences",
+            "from": "address",
+            "to": "buying preferences"
+        },
+        {
+            "id": "address-credit card ",
+            "from": "address",
+            "to": "credit card "
+        },
+        {
+            "id": "address-passwords",
+            "from": "address",
+            "to": "passwords"
+        },
+        {
+            "id": "address-education ",
+            "from": "address",
+            "to": "education "
+        },
+        {
+            "id": "address-email addresses",
+            "from": "address",
+            "to": "email addresses"
+        },
+        {
+            "id": "address-family data",
+            "from": "address",
+            "to": "family data"
+        },
+        {
+            "id": "address-gender",
+            "from": "address",
+            "to": "gender"
+        },
+        {
+            "id": "address-health data",
+            "from": "address",
+            "to": "health data"
+        },
+        {
+            "id": "address-identity card",
+            "from": "address",
+            "to": "identity card"
+        },
+        {
+            "id": "address-interests",
+            "from": "address",
+            "to": "interests"
+        },
+        {
+            "id": "address-job profile",
+            "from": "address",
+            "to": "job profile"
+        },
+        {
+            "id": "address-license ",
+            "from": "address",
+            "to": "license "
+        },
+        {
+            "id": "address-location",
+            "from": "address",
+            "to": "location"
+        },
+        {
+            "id": "address-names",
+            "from": "address",
+            "to": "names"
+        },
+        {
+            "id": "address-phone",
+            "from": "address",
+            "to": "phone"
+        },
+        {
+            "id": "address-purchases",
+            "from": "address",
+            "to": "purchases"
+        },
+        {
+            "id": "address-usernames",
+            "from": "address",
+            "to": "usernames"
+        },
+        {
+            "id": "age-credit card ",
+            "from": "age",
+            "to": "credit card "
+        },
+        {
+            "id": "age-passwords",
+            "from": "age",
+            "to": "passwords"
+        },
+        {
+            "id": "age-education ",
+            "from": "age",
+            "to": "education "
+        },
+        {
+            "id": "age-email addresses",
+            "from": "age",
+            "to": "email addresses"
+        },
+        {
+            "id": "age-gender",
+            "from": "age",
+            "to": "gender"
+        },
+        {
+            "id": "age-health data",
+            "from": "age",
+            "to": "health data"
+        },
+        {
+            "id": "age-identity card",
+            "from": "age",
+            "to": "identity card"
+        },
+        {
+            "id": "age-license ",
+            "from": "age",
+            "to": "license "
+        },
+        {
+            "id": "age-names",
+            "from": "age",
+            "to": "names"
+        },
+        {
+            "id": "age-passport data",
+            "from": "age",
+            "to": "passport data"
+        },
+        {
+            "id": "age-phone",
+            "from": "age",
+            "to": "phone"
+        },
+        {
+            "id": "age-purchases",
+            "from": "age",
+            "to": "purchases"
+        },
+        {
+            "id": "age-usernames",
+            "from": "age",
+            "to": "usernames"
+        },
+        {
+            "id": "bank account -financial transactions",
+            "from": "bank account ",
+            "to": "financial transactions"
+        },
+        {
+            "id": "bank account -names",
+            "from": "bank account ",
+            "to": "names"
+        },
+        {
+            "id": "bank account -phone",
+            "from": "bank account ",
+            "to": "phone"
+        },
+        {
+            "id": "buying preferences-credit card ",
+            "from": "buying preferences",
+            "to": "credit card "
+        },
+        {
+            "id": "buying preferences-purchases",
+            "from": "buying preferences",
+            "to": "purchases"
+        },
+        {
+            "id": "credit card -email addresses",
+            "from": "credit card ",
+            "to": "email addresses"
+        },
+        {
+            "id": "credit card -identity card",
+            "from": "credit card ",
+            "to": "identity card"
+        },
+        {
+            "id": "credit card -license ",
+            "from": "credit card ",
+            "to": "license "
+        },
+        {
+            "id": "credit card -names",
+            "from": "credit card ",
+            "to": "names"
+        },
+        {
+            "id": "credit card -passport data",
+            "from": "credit card ",
+            "to": "passport data"
+        },
+        {
+            "id": "credit card -phone",
+            "from": "credit card ",
+            "to": "phone"
+        },
+        {
+            "id": "credit card -purchases",
+            "from": "credit card ",
+            "to": "purchases"
+        },
+        {
+            "id": "date joined-passwords",
+            "from": "date joined",
+            "to": "passwords"
+        },
+        {
+            "id": "date joined-email addresses",
+            "from": "date joined",
+            "to": "email addresses"
+        },
+        {
+            "id": "date joined-last login date",
+            "from": "date joined",
+            "to": "last login date"
+        },
+        {
+            "id": "date joined-names",
+            "from": "date joined",
+            "to": "names"
+        },
+        {
+            "id": "date joined-usernames",
+            "from": "date joined",
+            "to": "usernames"
+        },
+        {
+            "id": "debit card -passwords",
+            "from": "debit card ",
+            "to": "passwords"
+        },
+        {
+            "id": "device info-passwords",
+            "from": "device info",
+            "to": "passwords"
+        },
+        {
+            "id": "device info-email addresses",
+            "from": "device info",
+            "to": "email addresses"
+        },
+        {
+            "id": "device info-usernames",
+            "from": "device info",
+            "to": "usernames"
+        },
+        {
+            "id": "passwords-email addresses",
+            "from": "passwords",
+            "to": "email addresses"
+        },
+        {
+            "id": "passwords-last login date",
+            "from": "passwords",
+            "to": "last login date"
+        },
+        {
+            "id": "passwords-location",
+            "from": "passwords",
+            "to": "location"
+        },
+        {
+            "id": "passwords-names",
+            "from": "passwords",
+            "to": "names"
+        },
+        {
+            "id": "passwords-password hints",
+            "from": "passwords",
+            "to": "password hints"
+        },
+        {
+            "id": "passwords-phone",
+            "from": "passwords",
+            "to": "phone"
+        },
+        {
+            "id": "passwords-usernames",
+            "from": "passwords",
+            "to": "usernames"
+        },
+        {
+            "id": "education -email addresses",
+            "from": "education ",
+            "to": "email addresses"
+        },
+        {
+            "id": "education -names",
+            "from": "education ",
+            "to": "names"
+        },
+        {
+            "id": "education -phone",
+            "from": "education ",
+            "to": "phone"
+        },
+        {
+            "id": "email addresses-family data",
+            "from": "email addresses",
+            "to": "family data"
+        },
+        {
+            "id": "email addresses-gender",
+            "from": "email addresses",
+            "to": "gender"
+        },
+        {
+            "id": "email addresses-interests",
+            "from": "email addresses",
+            "to": "interests"
+        },
+        {
+            "id": "email addresses-job profile",
+            "from": "email addresses",
+            "to": "job profile"
+        },
+        {
+            "id": "email addresses-last login date",
+            "from": "email addresses",
+            "to": "last login date"
+        },
+        {
+            "id": "email addresses-location",
+            "from": "email addresses",
+            "to": "location"
+        },
+        {
+            "id": "email addresses-names",
+            "from": "email addresses",
+            "to": "names"
+        },
+        {
+            "id": "email addresses-password hints",
+            "from": "email addresses",
+            "to": "password hints"
+        },
+        {
+            "id": "email addresses-phone",
+            "from": "email addresses",
+            "to": "phone"
+        },
+        {
+            "id": "email addresses-purchases",
+            "from": "email addresses",
+            "to": "purchases"
+        },
+        {
+            "id": "email addresses-usernames",
+            "from": "email addresses",
+            "to": "usernames"
+        },
+        {
+            "id": "family data-interests",
+            "from": "family data",
+            "to": "interests"
+        },
+        {
+            "id": "family data-phone",
+            "from": "family data",
+            "to": "phone"
+        },
+        {
+            "id": "financial transactions-phone",
+            "from": "financial transactions",
+            "to": "phone"
+        },
+        {
+            "id": "gender-health data",
+            "from": "gender",
+            "to": "health data"
+        },
+        {
+            "id": "gender-names",
+            "from": "gender",
+            "to": "names"
+        },
+        {
+            "id": "gender-phone",
+            "from": "gender",
+            "to": "phone"
+        },
+        {
+            "id": "health data-names",
+            "from": "health data",
+            "to": "names"
+        },
+        {
+            "id": "identity card-license ",
+            "from": "identity card",
+            "to": "license "
+        },
+        {
+            "id": "identity card-names",
+            "from": "identity card",
+            "to": "names"
+        },
+        {
+            "id": "identity card-phone",
+            "from": "identity card",
+            "to": "phone"
+        },
+        {
+            "id": "interests-phone",
+            "from": "interests",
+            "to": "phone"
+        },
+        {
+            "id": "job profile-location",
+            "from": "job profile",
+            "to": "location"
+        },
+        {
+            "id": "job profile-names",
+            "from": "job profile",
+            "to": "names"
+        },
+        {
+            "id": "job profile-phone",
+            "from": "job profile",
+            "to": "phone"
+        },
+        {
+            "id": "last login date-names",
+            "from": "last login date",
+            "to": "names"
+        },
+        {
+            "id": "last login date-usernames",
+            "from": "last login date",
+            "to": "usernames"
+        },
+        {
+            "id": "license -names",
+            "from": "license ",
+            "to": "names"
+        },
+        {
+            "id": "license -phone",
+            "from": "license ",
+            "to": "phone"
+        },
+        {
+            "id": "location-names",
+            "from": "location",
+            "to": "names"
+        },
+        {
+            "id": "location-usernames",
+            "from": "location",
+            "to": "usernames"
+        },
+        {
+            "id": "names-passport data",
+            "from": "names",
+            "to": "passport data"
+        },
+        {
+            "id": "names-phone",
+            "from": "names",
+            "to": "phone"
+        },
+        {
+            "id": "names-purchases",
+            "from": "names",
+            "to": "purchases"
+        },
+        {
+            "id": "names-usernames",
+            "from": "names",
+            "to": "usernames"
+        },
+        {
+            "id": "passport data-purchases",
+            "from": "passport data",
+            "to": "purchases"
+        },
+        {
+            "id": "password hints-usernames",
+            "from": "password hints",
+            "to": "usernames"
+        },
+        {
+            "id": "phone-purchases",
+            "from": "phone",
+            "to": "purchases"
+        }
+    ]
+}
