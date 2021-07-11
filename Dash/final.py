@@ -61,6 +61,77 @@ def Scatter_Plot():
                  hover_data=['Org'])
     return fig
 
+def Top_transgressors(k = 3):
+    scatter_data = pd.read_csv("../collect_data/final/scatter_data.csv")
+    temp = []
+    for i in scatter_data['breach_count(Million)']:
+        if i > 1000:
+            temp.append(str(i/1000) + " B")
+        elif i < 1:
+            temp.append(str(i*1000) + " K")
+        else:
+            temp.append(str(i) + " M")
+    scatter_data["breach_count_display"] = temp
+    scatter_data = scatter_data[['breach_count(Million)',"breach_count_display","Org","Date"]]
+    scatter_data = scatter_data.sort_values(by=['breach_count(Million)'], ascending=False)
+    output = [html.H3("Top " + str(k) + " transgressors")]
+    temp = [dbc.Col( [ html.P(i) for i in list(scatter_data["Org"].head(k))] )]
+    temp.append(dbc.Col( [ html.P(i) for i in list(scatter_data["breach_count_display"].head(k))] ))
+    temp.append(dbc.Col( [ html.P(i) for i in list(scatter_data["Date"].head(k))] ))
+    output.append(dbc.Row(temp))
+    output = dbc.Col(output)
+    return output
+
+def Overview_of_scatter():
+    final_out = []
+    scatter_data = pd.read_csv("../collect_data/final/scatter_data.csv")
+
+    # categories
+    temp = [ html.H4("Category of organizations") ]
+    temp.append(html.P(str(len(scatter_data["category"].unique()))))
+    final_out.append( dbc.Col(temp) )
+    
+    # Count Victims
+    temp = [ html.H4("Victims of breach") ]
+    count = sum(scatter_data["breach_count(Million)"])
+    if count > 1000:
+        count = str(int(count/1000)) + " B+"
+    elif count < 1:
+        count = str(int(count*1000)) + " K+"
+    else:
+        count = str(int(count)) + " M+"
+    temp.append(html.P(count))
+    final_out.append( dbc.Col(temp) )
+
+    # orgs reviewed
+    temp = [ html.H4("Organizations reviewed") ]
+    temp.append(html.P(str(len(scatter_data["Org"].unique()))))
+    final_out.append( dbc.Col(temp) )
+
+    final_out = dbc.Row(final_out)
+    return final_out
+
+#####################################################################
+######################## Callback Functions #########################
+#####################################################################
+
+@app.callback(Output('container-button-timestamp', 'children'),
+              Input('btn-nclicks-1', 'n_clicks'),
+              Input('btn-nclicks-2', 'n_clicks'),
+              Input('btn-nclicks-3', 'n_clicks'))
+def displayClick(btn1, btn2, btn3):
+    changed_id = [p['prop_id'] for p in dash.callback_context.triggered][0]
+    if 'btn-nclicks-1' in changed_id:
+        msg = 'Button 1 was most recently clicked'
+    elif 'btn-nclicks-2' in changed_id:
+        msg = 'Button 2 was most recently clicked'
+    elif 'btn-nclicks-3' in changed_id:
+        msg = 'Button 3 was most recently clicked'
+    else:
+        msg = 'None of the buttons have been clicked yet'
+    return html.Div(msg)
+
+
 #####################################################################
 ############################ App Layout #############################
 #####################################################################
@@ -73,12 +144,23 @@ app.layout = html.Div(
                         html.Div(dcc.Markdown(explaination_text)),
                         Network_Plot1(),
                         Network_Plot2()
-                        ], width=7),
-                # dbc.Col(html.Div("One of three columns"), width=3),
+                        ], width=5),
                 dbc.Col([
-                            dcc.Graph(figure=Scatter_Plot()),
-                            dcc.Graph(figure=Bar_Graph()),
-                        ], width=5), 
+                        dbc.Row([
+                                Top_transgressors(3),
+                                dbc.Col([
+                                        Overview_of_scatter(),
+                                        dcc.Graph(figure=Scatter_Plot())
+                                        ])
+                                ]),
+                        dbc.Row([
+                            html.Button('Button 1', id='btn-nclicks-1', n_clicks=0),
+                            html.Button('Button 2', id='btn-nclicks-2', n_clicks=0),
+                            html.Button('Button 3', id='btn-nclicks-3', n_clicks=0),
+                            html.Div(id='container-button-timestamp')
+                        ])
+                        dcc.Graph(figure=Bar_Graph()),
+                        ], width=7), 
             ],
         ),
     ],
