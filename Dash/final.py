@@ -44,7 +44,7 @@ def Network_Plot2():
         # Reading from json file
         json_object = json.load(openfile)
     final = visdcc.Network(data = json_object,
-                    id = 'network-graph', options= dict(height= '900px', width= '60%'))
+                    id = 'network-graph', options= dict(height= '900px', width= '80%'))
     return final
 
 def Bar_Graph(input_val):
@@ -135,42 +135,76 @@ def changeCount(x):
 ############################ App Layout #############################
 #####################################################################
 app.layout = html.Div(
-    [
-        html.H1(heading_of_page),
-        dbc.Row(
-            [
+    [   
+        dbc.Row([
+                html.H1(heading_of_page),
+                html.Div(dcc.Markdown(explaination_text))
+                ]),
+        dbc.Row([
                 dbc.Col([
-                        html.Div(dcc.Markdown(explaination_text)),
-                        Network_Plot1(),
+                        dcc.Input(
+                                id='num-multi',
+                                type='number',
+                                value=10,
+                                min = 1,
+                                max = 10
+                                ),
+                        html.Div(id='container-trangressor-count')
                         ], width=5),
                 dbc.Col([
-                        dbc.Row([
-                                dbc.Col([
-                                        dcc.Input(
-                                                id='num-multi',
-                                                type='number',
-                                                value=3,
-                                                min = 1,
-                                                max = 10
-                                                ),
-                                        html.Div(id='container-trangressor-count')
-                                        ], width=5),
-                                dbc.Col([
-                                        Overview_of_scatter(),
-                                        dcc.Graph(figure=Scatter_Plot())
-                                        ])
-                                ]),
-                        dbc.Row([
-                            dbc.Col(html.Button('Breach count', id='btn-nclicks-1', n_clicks=0)),
-                            dbc.Col(html.Button('Individuals impacted', id='btn-nclicks-2', n_clicks=0)),
-                            dbc.Col(html.Button('Information lost', id='btn-nclicks-3', n_clicks=0)),
-                        ]),
-                        html.Div(id='container-button-timestamp'),
-                        # dcc.Graph(figure=Bar_Graph("count")),
-                        ], width=7), 
-            ],
-        ),
-        Network_Plot2(),
+                        Overview_of_scatter(),
+                        dcc.Graph(figure=Scatter_Plot())
+                        ], width=7)
+                ]),
+        html.H3("Studying the Intensity of Data-Breaches over Time: "),
+        dbc.Row([
+                    dbc.Col([
+                                dbc.Col(html.Button('Breach count', id='btn-nclicks-1', n_clicks=0)),
+                                dbc.Col(html.Button('Individuals impacted', id='btn-nclicks-2', n_clicks=0)),
+                                dbc.Col(html.Button('Information lost', id='btn-nclicks-3', n_clicks=0)),
+                            ], width=3),
+                    dbc.Col(html.Div(id='container-button-timestamp'),width=9),
+                ]),
+        html.H3("Network Graphs depicting the categories and classes generally lost together: "),
+        dbc.Row([
+                dbc.Col(Network_Plot1(),width=4),
+                dbc.Col(Network_Plot2(),width=8),
+                ]),
+        # html.H1(heading_of_page),
+        # dbc.Row(
+        #     [
+        #         dbc.Col([
+        #                 html.Div(dcc.Markdown(explaination_text)),
+        #                 Network_Plot1(),
+        #                 ], width=5),
+        #         dbc.Col([
+        #                 dbc.Row([
+        #                         dbc.Col([
+        #                                 dcc.Input(
+        #                                         id='num-multi',
+        #                                         type='number',
+        #                                         value=3,
+        #                                         min = 1,
+        #                                         max = 10
+        #                                         ),
+        #                                 html.Div(id='container-trangressor-count')
+        #                                 ], width=5),
+        #                         dbc.Col([
+        #                                 Overview_of_scatter(),
+        #                                 dcc.Graph(figure=Scatter_Plot())
+        #                                 ], width=7)
+        #                         ]),
+        #                 dbc.Row([
+        #                     dbc.Col(html.Button('Breach count', id='btn-nclicks-1', n_clicks=0)),
+        #                     dbc.Col(html.Button('Individuals impacted', id='btn-nclicks-2', n_clicks=0)),
+        #                     dbc.Col(html.Button('Information lost', id='btn-nclicks-3', n_clicks=0)),
+        #                 ]),
+        #                 html.Div(id='container-button-timestamp'),
+        #                 # dcc.Graph(figure=Bar_Graph("count")),
+        #                 ], width=7), 
+        #     ],
+        # ),
+        # Network_Plot2(),
     ],
     style={
                 "padding": "2%"
