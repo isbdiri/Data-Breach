@@ -1,0 +1,45 @@
+body {
+    font-family: sans-serif;
+}
+
+.top-head {
+    border-bottom: #01183a solid 2px;
+    color: #01183a;
+    margin: 0;
+}
+
+.top-desc {
+    padding-bottom: 20px;
+}
+
+.data-table-row {
+    border-bottom: 1px solid #777;
+    padding-bottom: 15px;
+}
+
+.top-row {
+    margin-bottom: 20px;
+}
+
+.sub-head {
+    color: #4181ff;
+    font-weight: bold;
+}
+
+.sub-sub-head {
+    color: #01183a;
+}
+
+.scatter-overview {
+    box-sizing: border-box;
+    margin: 10px;
+    background-color: #01183a;
+    color: #fff;
+    border-radius: 3px;
+    border-bottom: 4px solid #4181ff;
+}
+
+.inpt {
+    width: 100px;
+    display: block;
+}

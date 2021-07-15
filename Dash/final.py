@@ -12,11 +12,23 @@ import visdcc
 
 app = dash.Dash(__name__,external_stylesheets=[dbc.themes.GRID])
 
+app.css.config.serve_locally = True
+app.scripts.config.serve_locally = True
+
+
+server = app.server
+app.title = "Data Breaches"
+
+app.head = html.Link(
+    rel='stylesheet',
+    href='/assets/style.css'
+)
+
 #####################################################################
 #################### Text to be written on page #####################
 #####################################################################
 
-heading_of_page = "HHHHHEEEEAAADDDIIINNNGGG"
+heading_of_page = "Data Breaches"
 
 explaination_text = """Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisi odio, iaculis at aliquam quis, sagittis quis quam. Vestibulum malesuada, leo vel maximus dignissim, justo felis dictum purus, eget convallis massa metus at purus. Vestibulum elementum leo vitae risus hendrerit pharetra. Proin magna nisi, maximus in quam sit amet, malesuada sollicitudin massa. Maecenas malesuada enim vel nulla congue euismod. Nulla facilisi. Pellentesque sit amet convallis nisl, sit amet interdum tortor. Cras a nulla consequat, scelerisque felis vitae, gravida quam. Phasellus varius, ipsum eu luctus pulvinar, est lectus luctus nunc, eu efficitur lectus massa et erat.
 
@@ -71,7 +83,7 @@ def Top_transgressors(k = 3):
     scatter_data["breach_count_display"] = temp
     scatter_data = scatter_data[['breach_count(Million)',"breach_count_display","Org","Date"]]
     scatter_data = scatter_data.sort_values(by=['breach_count(Million)'], ascending=False)
-    output = [html.H3("Top " + str(k) + " transgressors")]
+    output = [html.H3("Top " + str(k) + " transgressors", className="sub-sub-head"), dbc.Row([dbc.Col("Organisation"), dbc.Col("Number of accounts"), dbc.Col("Date")], className="data-table-row")]
     temp = [dbc.Col( [ html.P(i) for i in list(scatter_data["Org"].head(k))] )]
     temp.append(dbc.Col( [ html.P(i) for i in list(scatter_data["breach_count_display"].head(k))] ))
     temp.append(dbc.Col( [ html.P(i) for i in list(scatter_data["Date"].head(k))] ))
@@ -86,10 +98,10 @@ def Overview_of_scatter():
     # categories
     temp = [ html.H4("Category of organizations") ]
     temp.append(html.P(str(len(scatter_data["category"].unique()))))
-    final_out.append( dbc.Col(temp) )
+    final_out.append( dbc.Col(temp, className="scatter-overview") )
     
     # Count Victims
-    temp = [ html.H4("Victims of breach") ]
+    temp = [ html.H4("Victims of breach")]
     count = sum(scatter_data["breach_count(Million)"])
     if count > 1000:
         count = str(int(count/1000)) + " B+"
@@ -98,12 +110,12 @@ def Overview_of_scatter():
     else:
         count = str(int(count)) + " M+"
     temp.append(html.P(count))
-    final_out.append( dbc.Col(temp) )
+    final_out.append( dbc.Col(temp, className="scatter-overview") )
 
     # orgs reviewed
     temp = [ html.H4("Organizations reviewed") ]
     temp.append(html.P(str(len(scatter_data["Org"].unique()))))
-    final_out.append( dbc.Col(temp) )
+    final_out.append( dbc.Col(temp, className="scatter-overview") )
 
     final_out = dbc.Row(final_out)
     return final_out
@@ -137,18 +149,22 @@ def changeCount(x):
 app.layout = html.Div(
     [   
         dbc.Row([
-                html.H1(heading_of_page),
-                html.Div(dcc.Markdown(explaination_text))
-                ]),
+                html.H1(html.P(heading_of_page, className="top-head")),
+                html.Div(dcc.Markdown(explaination_text), className="top-desc")
+                ], className="top-row"),
+        dbc.Row(html.H2("Victim Distribution"), className="sub-head"),
         dbc.Row([
                 dbc.Col([
+                        html.P("Select top"),
                         dcc.Input(
                                 id='num-multi',
                                 type='number',
                                 value=10,
                                 min = 1,
-                                max = 10
+                                max = 10,
+                                className="inpt"
                                 ),
+                        html.P("Victims"),
                         html.Div(id='container-trangressor-count')
                         ], width=5),
                 dbc.Col([
