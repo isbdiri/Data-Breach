@@ -30,10 +30,7 @@ app.head = html.Link(
 
 heading_of_page = "Data Breaches"
 
-explaination_text = """Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisi odio, iaculis at aliquam quis, sagittis quis quam. Vestibulum malesuada, leo vel maximus dignissim, justo felis dictum purus, eget convallis massa metus at purus. Vestibulum elementum leo vitae risus hendrerit pharetra. Proin magna nisi, maximus in quam sit amet, malesuada sollicitudin massa. Maecenas malesuada enim vel nulla congue euismod. Nulla facilisi. Pellentesque sit amet convallis nisl, sit amet interdum tortor. Cras a nulla consequat, scelerisque felis vitae, gravida quam. Phasellus varius, ipsum eu luctus pulvinar, est lectus luctus nunc, eu efficitur lectus massa et erat.
-
-
-Proin eget venenatis nisi. Integer mollis ornare quam, ac finibus justo malesuada quis. Nam efficitur ut mauris sit amet tempus. Donec vel purus mauris. Aliquam et orci non lorem tincidunt elementum. Nullam sollicitudin egestas nisl ut fermentum. Duis auctor risus sit amet diam vulputate, tincidunt bibendum quam suscipit."""
+explaination_text = """Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisi odio, iaculis at aliquam quis, sagittis quis quam. Vestibulum malesuada, leo vel maximus dignissim, justo felis dictum purus, eget convallis massa metus at purus. Vestibulum elementum leo vitae risus hendrerit pharetra. Proin magna nisi, maximus in quam sit amet, malesuada sollicitudin massa. Maecenas malesuada enim vel nulla congue euismod. Nulla facilisi. Pellentesque sit amet convallis nisl, sit amet interdum tortor. Cras a nulla consequat, scelerisque felis vitae, gravida quam. Phasellus varius, ipsum eu luctus pulvinar, est lectus luctus nunc, eu efficitur lectus massa et erat."""
 
 #####################################################################
 ##################### Graphs to be plotted ##########################
@@ -47,7 +44,10 @@ def Network_Plot1():
                             id='cytoscape1',
                             elements=json_object,
                             layout={'name': 'circle'},
-                            style={'width': '80%', 'height': '500px'}
+                            style={'width': '100%',
+                                    'height': '500px',
+                                    "border":"1px solid grey",
+                                    "border-radius": "10px"}
                             )
     return final
 
@@ -56,7 +56,7 @@ def Network_Plot2():
         # Reading from json file
         json_object = json.load(openfile)
     final = visdcc.Network(data = json_object,
-                    id = 'network-graph', options= dict(height= '900px', width= '80%'))
+                    id = 'network-graph', options= dict(height= '500px', width= '95%'))
     return final
 
 def Bar_Graph(input_val):
@@ -83,7 +83,7 @@ def Top_transgressors(k = 3):
     scatter_data["breach_count_display"] = temp
     scatter_data = scatter_data[['breach_count(Million)',"breach_count_display","Org","Date"]]
     scatter_data = scatter_data.sort_values(by=['breach_count(Million)'], ascending=False)
-    output = [html.H3("Top " + str(k) + " transgressors", className="sub-sub-head"), dbc.Row([dbc.Col("Organisation"), dbc.Col("Number of accounts"), dbc.Col("Date")], className="data-table-row")]
+    output = [html.H3("Top " + str(k) + " transgressors", className="sub-sub-head"), dbc.Row([dbc.Col("Organisation"), dbc.Col("Number of victims"), dbc.Col("Date")], className="data-table-row")]
     temp = [dbc.Col( [ html.P(i) for i in list(scatter_data["Org"].head(k))] )]
     temp.append(dbc.Col( [ html.P(i) for i in list(scatter_data["breach_count_display"].head(k))] ))
     temp.append(dbc.Col( [ html.P(i) for i in list(scatter_data["Date"].head(k))] ))
@@ -146,84 +146,57 @@ def changeCount(x):
 #####################################################################
 ############################ App Layout #############################
 #####################################################################
-app.layout = html.Div(
-    [   
-        dbc.Row([
-                html.H1(html.P(heading_of_page, className="top-head")),
-                html.Div(dcc.Markdown(explaination_text), className="top-desc")
-                ], className="top-row"),
-        dbc.Row(html.H2("Victim Distribution"), className="sub-head"),
-        dbc.Row([
-                dbc.Col([
-                        html.P("Select top"),
-                        dcc.Input(
-                                id='num-multi',
-                                type='number',
-                                value=10,
-                                min = 1,
-                                max = 10,
-                                className="inpt"
-                                ),
-                        html.P("Victims"),
-                        html.Div(id='container-trangressor-count')
-                        ], width=5),
-                dbc.Col([
-                        Overview_of_scatter(),
-                        dcc.Graph(figure=Scatter_Plot())
-                        ], width=7)
-                ]),
-        html.H3("Studying the Intensity of Data-Breaches over Time: "),
-        dbc.Row([
-                    dbc.Col([
-                                dbc.Col(html.Button('Breach count', id='btn-nclicks-1', n_clicks=0)),
-                                dbc.Col(html.Button('Individuals impacted', id='btn-nclicks-2', n_clicks=0)),
-                                dbc.Col(html.Button('Information lost', id='btn-nclicks-3', n_clicks=0)),
-                            ], width=3),
-                    dbc.Col(html.Div(id='container-button-timestamp'),width=9),
-                ]),
-        html.H3("Network Graphs depicting the categories and classes generally lost together: "),
-        dbc.Row([
-                dbc.Col(Network_Plot1(),width=4),
-                dbc.Col(Network_Plot2(),width=8),
-                ]),
-        # html.H1(heading_of_page),
-        # dbc.Row(
-        #     [
-        #         dbc.Col([
-        #                 html.Div(dcc.Markdown(explaination_text)),
-        #                 Network_Plot1(),
-        #                 ], width=5),
-        #         dbc.Col([
-        #                 dbc.Row([
-        #                         dbc.Col([
-        #                                 dcc.Input(
-        #                                         id='num-multi',
-        #                                         type='number',
-        #                                         value=3,
-        #                                         min = 1,
-        #                                         max = 10
-        #                                         ),
-        #                                 html.Div(id='container-trangressor-count')
-        #                                 ], width=5),
-        #                         dbc.Col([
-        #                                 Overview_of_scatter(),
-        #                                 dcc.Graph(figure=Scatter_Plot())
-        #                                 ], width=7)
-        #                         ]),
-        #                 dbc.Row([
-        #                     dbc.Col(html.Button('Breach count', id='btn-nclicks-1', n_clicks=0)),
-        #                     dbc.Col(html.Button('Individuals impacted', id='btn-nclicks-2', n_clicks=0)),
-        #                     dbc.Col(html.Button('Information lost', id='btn-nclicks-3', n_clicks=0)),
-        #                 ]),
-        #                 html.Div(id='container-button-timestamp'),
-        #                 # dcc.Graph(figure=Bar_Graph("count")),
-        #                 ], width=7), 
-        #     ],
-        # ),
-        # Network_Plot2(),
-    ],
+app.layout = html.Div([dbc.Row([
+            dbc.Col([
+                                dbc.Row([
+                                        html.H1(html.P(heading_of_page, className="top-head")),
+                                        html.Div(dcc.Markdown(explaination_text), className="top-desc")
+                                        ]),
+                                ], width=3, style={"position":"fixed"},className="left-col"),
+            dbc.Col([   
+                # dbc.Row([
+                #         html.H1(html.P(heading_of_page, className="top-head")),
+                #         html.Div(dcc.Markdown(explaination_text), className="top-desc")
+                #         ], className="top-row"),
+                dbc.Row(html.H2("Victim Distribution"), className="sub-head"),
+                dbc.Row([
+                        dbc.Col([
+                                html.P("Select top"),
+                                dcc.Input(
+                                        id='num-multi',
+                                        type='number',
+                                        value=3,
+                                        min = 1,
+                                        max = 10,
+                                        className="inpt"
+                                        ),
+                                html.P("Victims"),
+                                html.Div(id='container-trangressor-count')
+                                ], width=5),
+                        dbc.Col([
+                                Overview_of_scatter(),
+                                dcc.Graph(figure=Scatter_Plot())
+                                ], width=7)
+                        ]),
+                html.H2("Studying the Intensity of Data-Breaches over Time: ", className="sub-head"),
+                dbc.Row([
+                            dbc.Col([
+                                        dbc.Col(html.Button('Breach count', id='btn-nclicks-1', n_clicks=0)),
+                                        dbc.Col(html.Button('Individuals impacted', id='btn-nclicks-2', n_clicks=0)),
+                                        dbc.Col(html.Button('Information lost', id='btn-nclicks-3', n_clicks=0)),
+                                    ], width=3),
+                            dbc.Col(html.Div(id='container-button-timestamp'),width=9),
+                        ]),
+                html.H2("Network Graphs depicting the categories and classes generally lost together: ", className="sub-head"),
+                dbc.Row([
+                        dbc.Col(Network_Plot1(),width=4),
+                        dbc.Col(Network_Plot2(),width=8, style={"border":"1px solid grey","border-radius": "10px", "margin": '0px', "padding": "0px"}),
+                        ]),
+            ], 
+            width="auto", style={"padding-left": "27%"})
+    ],)],
     style={
-                "padding": "2%"
+                "padding": "0%"
             }
 )
 
