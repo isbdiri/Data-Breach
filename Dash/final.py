@@ -10,7 +10,7 @@ import dash_cytoscape as cyto
 import dash_html_components as html
 import visdcc
 
-app = dash.Dash(__name__,external_stylesheets=[dbc.themes.GRID])
+app = dash.Dash(__name__,external_stylesheets=[dbc.themes.BOOTSTRAP])
 
 app.css.config.serve_locally = True
 app.scripts.config.serve_locally = True
@@ -96,12 +96,12 @@ def Overview_of_scatter():
     scatter_data = pd.read_csv("../collect_data/final/scatter_data.csv")
 
     # categories
-    temp = [ html.H4("Category of organizations") ]
+    temp = [ html.H5("Category of organizations") ]
     temp.append(html.P(str(len(scatter_data["category"].unique()))))
     final_out.append( dbc.Col(temp, className="scatter-overview") )
     
     # Count Victims
-    temp = [ html.H4("Victims of breach")]
+    temp = [ html.H5("Victims of breach")]
     count = sum(scatter_data["breach_count(Million)"])
     if count > 1000:
         count = str(int(count/1000)) + " B+"
@@ -113,7 +113,7 @@ def Overview_of_scatter():
     final_out.append( dbc.Col(temp, className="scatter-overview") )
 
     # orgs reviewed
-    temp = [ html.H4("Organizations reviewed") ]
+    temp = [ html.H5("Organizations reviewed") ]
     temp.append(html.P(str(len(scatter_data["Org"].unique()))))
     final_out.append( dbc.Col(temp, className="scatter-overview") )
 
@@ -148,52 +148,48 @@ def changeCount(x):
 #####################################################################
 app.layout = html.Div([dbc.Row([
             dbc.Col([
-                                dbc.Row([
-                                        html.H1(html.P(heading_of_page, className="top-head")),
-                                        html.Div(dcc.Markdown(explaination_text), className="top-desc")
-                                        ]),
-                                ], width=3, style={"position":"fixed"},className="left-col"),
-            dbc.Col([   
-                # dbc.Row([
-                #         html.H1(html.P(heading_of_page, className="top-head")),
-                #         html.Div(dcc.Markdown(explaination_text), className="top-desc")
-                #         ], className="top-row"),
-                dbc.Row(html.H2("Victim Distribution"), className="sub-head"),
-                dbc.Row([
-                        dbc.Col([
-                                html.P("Select top"),
-                                dcc.Input(
-                                        id='num-multi',
-                                        type='number',
-                                        value=3,
-                                        min = 1,
-                                        max = 10,
-                                        className="inpt"
-                                        ),
-                                html.P("Victims"),
-                                html.Div(id='container-trangressor-count')
-                                ], width=5),
-                        dbc.Col([
-                                Overview_of_scatter(),
-                                dcc.Graph(figure=Scatter_Plot())
-                                ], width=7)
-                        ]),
-                html.H2("Studying the Intensity of Data-Breaches over Time: ", className="sub-head"),
-                dbc.Row([
+                    dbc.Row([
+                            html.H1(html.P(heading_of_page, className="top-head")),
+                            html.Div(dcc.Markdown(explaination_text), className="top-desc")
+                            ]),
+                    ], width=3, style={"position":"fixed"},className="left-col"),
+            dbc.Col([ 
+                    dbc.Row(html.H2("Victim Distribution"), className="sub-head"),
+                    dbc.Row([
                             dbc.Col([
-                                        dbc.Col(html.Button('Breach count', id='btn-nclicks-1', n_clicks=0)),
-                                        dbc.Col(html.Button('Individuals impacted', id='btn-nclicks-2', n_clicks=0)),
-                                        dbc.Col(html.Button('Information lost', id='btn-nclicks-3', n_clicks=0)),
-                                    ], width=3),
+                                    html.P("Select top"),
+                                    dcc.Input(
+                                            id='num-multi',
+                                            type='number',
+                                            value=3,
+                                            min = 1,
+                                            max = 10,
+                                            className="inpt"
+                                            ),
+                                    html.P("Victims"),
+                                    html.Div(id='container-trangressor-count')
+                                    ], width=5),
+                            dbc.Col([
+                                    Overview_of_scatter(),
+                                    dcc.Graph(figure=Scatter_Plot())
+                                    ], width=7)
+                            ]),
+                    dbc.Row(html.H2("Intensity of Data-Breaches over Time: "), className="sub-head"),
+                    dbc.Row([
+                            dbc.Col([
+                                        dbc.Row(dbc.Button('Breach count', id='btn-nclicks-1', n_clicks=0,outline=True, color="info", size="lg"),align="start"),
+                                        dbc.Row(dbc.Button('Individuals impacted', id='btn-nclicks-2', n_clicks=0,outline=True, color="info", size="lg"),align="center"),
+                                        dbc.Row(dbc.Button('Information lost', id='btn-nclicks-3', n_clicks=0,outline=True, color="info", size="lg"),align="end"),
+                                    ], width=3, style={"padding-top": "3%", "justify-content":"space-between", "display":"flex", "flex-direction":"column", "padding-top":"6%", "padding-bottom":"9%"}),
                             dbc.Col(html.Div(id='container-button-timestamp'),width=9),
-                        ]),
-                html.H2("Network Graphs depicting the categories and classes generally lost together: ", className="sub-head"),
-                dbc.Row([
-                        dbc.Col(Network_Plot1(),width=4),
-                        dbc.Col(Network_Plot2(),width=8, style={"border":"1px solid grey","border-radius": "10px", "margin": '0px', "padding": "0px"}),
-                        ]),
-            ], 
-            width="auto", style={"padding-left": "27%"})
+                            ]),
+                    dbc.Row(html.H2("Data categories and classes generally lost together: "), className="sub-head"),
+                    dbc.Row([
+                            dbc.Col(Network_Plot1(),width=4),
+                            dbc.Col(Network_Plot2(),width=8, style={"border":"1px solid grey","border-radius": "10px", "margin": '0px', "padding": "0px"}),
+                            ]),
+                    ], 
+            width="auto", style={"padding-top": "3%", "padding-left": "27%","padding-bottom": "3%"})
     ],)],
     style={
                 "padding": "0%"

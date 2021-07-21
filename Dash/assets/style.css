@@ -27,9 +27,15 @@ body {
     padding: 3%;
 }
 
+.MidBlock{
+    /*background-color: #f1f1f1;*/
+    padding:  2%;
+}
+
 .sub-head {
     color: #4181ff;
     font-weight: bold;
+    /*padding-left: 2%;*/
 }
 
 .sub-sub-head {
