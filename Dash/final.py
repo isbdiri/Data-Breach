@@ -30,7 +30,27 @@ app.head = html.Link(
 
 heading_of_page = "Data Breaches"
 
-explaination_text = """Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisi odio, iaculis at aliquam quis, sagittis quis quam. Vestibulum malesuada, leo vel maximus dignissim, justo felis dictum purus, eget convallis massa metus at purus. Vestibulum elementum leo vitae risus hendrerit pharetra. Proin magna nisi, maximus in quam sit amet, malesuada sollicitudin massa. Maecenas malesuada enim vel nulla congue euismod. Nulla facilisi. Pellentesque sit amet convallis nisl, sit amet interdum tortor. Cras a nulla consequat, scelerisque felis vitae, gravida quam. Phasellus varius, ipsum eu luctus pulvinar, est lectus luctus nunc, eu efficitur lectus massa et erat."""
+explaination_text = """
+
+                    This Dashboard aims to study the trends in Data Leaks in India 
+                    over the years. 
+
+
+                    1. **Victim Distribution**
+
+                    * Analyzed how the severity of data breaches varies based on the victim count and number of data fields leaked, from a corpus of over 30 data leaks.
+
+
+                    2. **Data-Breaches over Time**
+
+                    * Aim to study the trends in Victim Count, Information lost and Frequency over the years
+
+
+                    3. **Data categories and classes lost together**
+
+                    * A visual representation of data Fields often lost together.
+
+                    """
 
 #####################################################################
 ##################### Graphs to be plotted ##########################
