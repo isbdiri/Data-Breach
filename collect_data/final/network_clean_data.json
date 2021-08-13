@@ -45,10 +45,6 @@
             "label": "passwords"
         },
         {
-            "id": "education ",
-            "label": "education "
-        },
-        {
             "id": "email addresses",
             "label": "email addresses"
         },
@@ -164,11 +160,6 @@
             "to": "passwords"
         },
         {
-            "id": "address-education ",
-            "from": "address",
-            "to": "education "
-        },
-        {
             "id": "address-email addresses",
             "from": "address",
             "to": "email addresses"
@@ -242,11 +233,6 @@
             "id": "age-passwords",
             "from": "age",
             "to": "passwords"
-        },
-        {
-            "id": "age-education ",
-            "from": "age",
-            "to": "education "
         },
         {
             "id": "age-email addresses",
@@ -437,21 +423,6 @@
             "id": "passwords-usernames",
             "from": "passwords",
             "to": "usernames"
-        },
-        {
-            "id": "education -email addresses",
-            "from": "education ",
-            "to": "email addresses"
-        },
-        {
-            "id": "education -names",
-            "from": "education ",
-            "to": "names"
-        },
-        {
-            "id": "education -phone",
-            "from": "education ",
-            "to": "phone"
         },
         {
             "id": "email addresses-family data",

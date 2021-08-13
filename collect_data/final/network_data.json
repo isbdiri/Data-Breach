@@ -86,12 +86,6 @@
     {
         "data": {
             "source": "pii",
-            "target": "passwords"
-        }
-    },
-    {
-        "data": {
-            "source": "pii",
             "target": "device info"
         }
     },
@@ -146,12 +140,6 @@
     {
         "data": {
             "source": "pii",
-            "target": "age"
-        }
-    },
-    {
-        "data": {
-            "source": "pii",
             "target": "geolocation"
         }
     },
@@ -213,24 +201,6 @@
         "data": {
             "source": "pii",
             "target": "geolocation"
-        }
-    },
-    {
-        "data": {
-            "source": "pii",
-            "target": "geolocation"
-        }
-    },
-    {
-        "data": {
-            "source": "pii",
-            "target": "geolocation"
-        }
-    },
-    {
-        "data": {
-            "source": "pii",
-            "target": "demographics"
         }
     },
     {
@@ -422,12 +392,6 @@
     {
         "data": {
             "source": "passwords",
-            "target": "pii"
-        }
-    },
-    {
-        "data": {
-            "source": "passwords",
             "target": "device info"
         }
     },
@@ -447,12 +411,6 @@
         "data": {
             "source": "passwords",
             "target": "age"
-        }
-    },
-    {
-        "data": {
-            "source": "passwords",
-            "target": "geolocation"
         }
     },
     {
@@ -566,12 +524,6 @@
     {
         "data": {
             "source": "age",
-            "target": "pii"
-        }
-    },
-    {
-        "data": {
-            "source": "age",
             "target": "passwords"
         }
     },
@@ -615,18 +567,6 @@
         "data": {
             "source": "age",
             "target": "geolocation"
-        }
-    },
-    {
-        "data": {
-            "source": "age",
-            "target": "geolocation"
-        }
-    },
-    {
-        "data": {
-            "source": "age",
-            "target": "demographics"
         }
     },
     {
@@ -740,18 +680,6 @@
     {
         "data": {
             "source": "geolocation",
-            "target": "pii"
-        }
-    },
-    {
-        "data": {
-            "source": "geolocation",
-            "target": "pii"
-        }
-    },
-    {
-        "data": {
-            "source": "geolocation",
             "target": "passwords"
         }
     },
@@ -776,12 +704,6 @@
     {
         "data": {
             "source": "geolocation",
-            "target": "passwords"
-        }
-    },
-    {
-        "data": {
-            "source": "geolocation",
             "target": "age"
         }
     },
@@ -807,18 +729,6 @@
         "data": {
             "source": "geolocation",
             "target": "age"
-        }
-    },
-    {
-        "data": {
-            "source": "geolocation",
-            "target": "age"
-        }
-    },
-    {
-        "data": {
-            "source": "geolocation",
-            "target": "demographics"
         }
     },
     {
@@ -914,12 +824,6 @@
     {
         "data": {
             "source": "demographics",
-            "target": "pii"
-        }
-    },
-    {
-        "data": {
-            "source": "demographics",
             "target": "age"
         }
     },
@@ -927,18 +831,6 @@
         "data": {
             "source": "demographics",
             "target": "age"
-        }
-    },
-    {
-        "data": {
-            "source": "demographics",
-            "target": "age"
-        }
-    },
-    {
-        "data": {
-            "source": "demographics",
-            "target": "geolocation"
         }
     },
     {
