@@ -92,7 +92,7 @@
     {
         "data": {
             "source": "pii",
-            "target": "age"
+            "target": "device info"
         }
     },
     {
@@ -135,6 +135,18 @@
         "data": {
             "source": "pii",
             "target": "age"
+        }
+    },
+    {
+        "data": {
+            "source": "pii",
+            "target": "age"
+        }
+    },
+    {
+        "data": {
+            "source": "pii",
+            "target": "geolocation"
         }
     },
     {
@@ -219,6 +231,12 @@
         "data": {
             "source": "pii",
             "target": "demographics"
+        }
+    },
+    {
+        "data": {
+            "source": "pii",
+            "target": "consumer behavior"
         }
     },
     {
@@ -261,6 +279,12 @@
         "data": {
             "source": "pii",
             "target": "employment history"
+        }
+    },
+    {
+        "data": {
+            "source": "pii",
+            "target": "financial info"
         }
     },
     {
@@ -464,7 +488,31 @@
     {
         "data": {
             "source": "device info",
+            "target": "pii"
+        }
+    },
+    {
+        "data": {
+            "source": "device info",
             "target": "passwords"
+        }
+    },
+    {
+        "data": {
+            "source": "device info",
+            "target": "geolocation"
+        }
+    },
+    {
+        "data": {
+            "source": "device info",
+            "target": "consumer behavior"
+        }
+    },
+    {
+        "data": {
+            "source": "device info",
+            "target": "financial info"
         }
     },
     {
@@ -680,7 +728,7 @@
     {
         "data": {
             "source": "geolocation",
-            "target": "passwords"
+            "target": "pii"
         }
     },
     {
@@ -699,6 +747,18 @@
         "data": {
             "source": "geolocation",
             "target": "passwords"
+        }
+    },
+    {
+        "data": {
+            "source": "geolocation",
+            "target": "passwords"
+        }
+    },
+    {
+        "data": {
+            "source": "geolocation",
+            "target": "device info"
         }
     },
     {
@@ -747,6 +807,12 @@
         "data": {
             "source": "geolocation",
             "target": "demographics"
+        }
+    },
+    {
+        "data": {
+            "source": "geolocation",
+            "target": "consumer behavior"
         }
     },
     {
@@ -777,6 +843,12 @@
         "data": {
             "source": "geolocation",
             "target": "employment history"
+        }
+    },
+    {
+        "data": {
+            "source": "geolocation",
+            "target": "financial info"
         }
     },
     {
@@ -902,7 +974,19 @@
     {
         "data": {
             "source": "consumer behavior",
+            "target": "pii"
+        }
+    },
+    {
+        "data": {
+            "source": "consumer behavior",
             "target": "passwords"
+        }
+    },
+    {
+        "data": {
+            "source": "consumer behavior",
+            "target": "device info"
         }
     },
     {
@@ -932,7 +1016,19 @@
     {
         "data": {
             "source": "consumer behavior",
+            "target": "geolocation"
+        }
+    },
+    {
+        "data": {
+            "source": "consumer behavior",
             "target": "demographics"
+        }
+    },
+    {
+        "data": {
+            "source": "consumer behavior",
+            "target": "financial info"
         }
     },
     {
@@ -1022,12 +1118,24 @@
     {
         "data": {
             "source": "financial info",
+            "target": "pii"
+        }
+    },
+    {
+        "data": {
+            "source": "financial info",
             "target": "passwords"
         }
     },
     {
         "data": {
             "source": "financial info",
+            "target": "device info"
+        }
+    },
+    {
+        "data": {
+            "source": "financial info",
             "target": "age"
         }
     },
@@ -1047,6 +1155,18 @@
         "data": {
             "source": "financial info",
             "target": "geolocation"
+        }
+    },
+    {
+        "data": {
+            "source": "financial info",
+            "target": "geolocation"
+        }
+    },
+    {
+        "data": {
+            "source": "financial info",
+            "target": "consumer behavior"
         }
     },
     {

@@ -105,6 +105,10 @@
             "label": "phone"
         },
         {
+            "id": "profile data",
+            "label": "profile data"
+        },
+        {
             "id": "purchases",
             "label": "purchases"
         },
@@ -153,6 +157,11 @@
             "id": "address-credit card ",
             "from": "address",
             "to": "credit card "
+        },
+        {
+            "id": "address-device info",
+            "from": "address",
+            "to": "device info"
         },
         {
             "id": "address-passwords",
@@ -310,6 +319,11 @@
             "to": "purchases"
         },
         {
+            "id": "credit card -device info",
+            "from": "credit card ",
+            "to": "device info"
+        },
+        {
             "id": "credit card -email addresses",
             "from": "credit card ",
             "to": "email addresses"
@@ -383,6 +397,16 @@
             "id": "device info-email addresses",
             "from": "device info",
             "to": "email addresses"
+        },
+        {
+            "id": "device info-names",
+            "from": "device info",
+            "to": "names"
+        },
+        {
+            "id": "device info-purchases",
+            "from": "device info",
+            "to": "purchases"
         },
         {
             "id": "device info-usernames",
@@ -468,6 +492,11 @@
             "id": "email addresses-phone",
             "from": "email addresses",
             "to": "phone"
+        },
+        {
+            "id": "email addresses-profile data",
+            "from": "email addresses",
+            "to": "profile data"
         },
         {
             "id": "email addresses-purchases",
@@ -608,6 +637,11 @@
             "id": "password hints-usernames",
             "from": "password hints",
             "to": "usernames"
+        },
+        {
+            "id": "phone-profile data",
+            "from": "phone",
+            "to": "profile data"
         },
         {
             "id": "phone-purchases",

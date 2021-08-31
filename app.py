@@ -95,7 +95,7 @@ def Top_transgressors(k = 3):
     temp = []
     for i in scatter_data['breach_count(Million)']:
         if i > 1000:
-            temp.append(str(i/1000) + " B")
+            temp.append(str(i) + " M")
         elif i < 1:
             temp.append(str(i*1000) + " K")
         else:
@@ -151,13 +151,13 @@ def Overview_of_scatter():
 def displayClick(btn1, btn2, btn3):
     changed_id = [p['prop_id'] for p in dash.callback_context.triggered][0]
     if 'btn-nclicks-1' in changed_id:
-        return dcc.Graph(figure=Bar_Graph("count"))
+        return dcc.Graph(figure=Bar_Graph("Number of Data Breaches"))
     elif 'btn-nclicks-2' in changed_id:
-        return dcc.Graph(figure=Bar_Graph("sum"))
+        return dcc.Graph(figure=Bar_Graph("Individuals impacted (Millions)"))
     elif 'btn-nclicks-3' in changed_id:
-        return dcc.Graph(figure=Bar_Graph("info_lost"))
+        return dcc.Graph(figure=Bar_Graph("Cumulative Exposure Index"))
     else:
-        return dcc.Graph(figure=Bar_Graph("count"))
+        return dcc.Graph(figure=Bar_Graph("Number of Data Breaches"))
 
 @app.callback(Output('container-trangressor-count', 'children'),
                 Input('num-multi', 'value'))
@@ -181,7 +181,7 @@ app.layout = html.Div([dbc.Row([
                                     dcc.Input(
                                             id='num-multi',
                                             type='number',
-                                            value=3,
+                                            value=6,
                                             min = 1,
                                             max = 10,
                                             className="inpt"
@@ -199,7 +199,7 @@ app.layout = html.Div([dbc.Row([
                             dbc.Col([
                                         dbc.Row(dbc.Button('Breach count', id='btn-nclicks-1', n_clicks=0,outline=True, color="info", size="lg"),align="start"),
                                         dbc.Row(dbc.Button('Individuals impacted', id='btn-nclicks-2', n_clicks=0,outline=True, color="info", size="lg"),align="center"),
-                                        dbc.Row(dbc.Button('Information lost', id='btn-nclicks-3', n_clicks=0,outline=True, color="info", size="lg"),align="end"),
+                                        dbc.Row(dbc.Button('Exposure Index', id='btn-nclicks-3', n_clicks=0,outline=True, color="info", size="lg"),align="end"),
                                     ], width=3, style={"padding-top": "3%", "justify-content":"space-between", "display":"flex", "flex-direction":"column", "padding-top":"6%", "padding-bottom":"9%"}),
                             dbc.Col(html.Div(id='container-button-timestamp'),width=9),
                             ]),

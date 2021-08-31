@@ -30,3 +30,5 @@ Date,Org,category,breach_count(Million),employee_count,data_classes
 02-2021,BPSSC Police exam,public welfare,0.5,1600,"Email addresses,Names,Dates of birth,Phone numbers,Physical addresses,Genders"
 01-2021,CoWIN,public welfare,0.0015,17,"Names,Genders,Physical addresses,Ages,Personal health data"
 01-2021,Juspay,web services,35,350,Partial credit card data
+07-2013,Truecaller,web services,300,200,"Phone numbers,Email addresses,Photos"
+08-2015,Ashley Madison,web services,0.15,24,"Partial credit card data,Names,Purchases,Physical addresses,IP addresses"
