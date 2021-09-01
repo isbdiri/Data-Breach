@@ -1,34 +1,34 @@
-,breach_count(Million),Relative Exposure Index,employee_count,category,Org,Date
-0,3000.0,12.899219826090118,8600,web services,Yahoo,2017-10-01
-1,1100.0,12.994530005894443,383,public welfare,UIDAI,2018-03-01
-2,500.0,12.899219826090118,8600,web services,Yahoo,2014-01-01
-3,360.0,11.877568578558138,150,social media,MySpace,2013-06-01
-4,340.0,12.513557345278134,22,web services,Exactis,2018-06-01
-5,330.0,10.691944912900398,5500,social media,Twitter,2018-05-01
-6,152.0,11.30302714040604,22516,e commerce,Adobe,2013-10-01
-7,150.0,11.289781913656018,110,health,MyFitnessPal,2018-02-01
-8,148.0,11.835974681259302,11200,web services,Equifax,2017-09-01
-9,145.0,11.661345470088502,13300,e commerce,ebay,2014-03-01
-10,137.0,11.422271096702097,1500,web services,Canva,2019-05-01
-11,126.0,11.33857207782545,62939,health,Apollo,2018-06-01
-12,100.0,10.596634733096074,250,social media,Quora,2018-12-01
-13,92.0,10.107788016048858,2104,web services,Youku,2016-12-01
-14,85.0,10.4341158035983,44641,entertainment,Dailymotion,2016-10-01
-15,69.0,9.820105943597078,2548,web services,Dropbox,2012-01-01
-16,66.0,9.775654181026244,411,social media,tumblr,2013-02-01
-17,12.3,8.788745881938135,600,e commerce,Bonobos,2021-01-01
-18,1.9,6.921000505732158,10300,web services,Pixlr,2021-01-01
-19,0.5,5.298317366548037,2532,web services,Zoom,2020-04-01
-20,0.3,5.298317366548037,6547,entertainment,Nintendo,2020-04-01
-21,3.2,6.749150248805499,295941,e commerce,Hitachi Payment Services System,2016-10-01
-22,3.5,7.5319095880551306,245642,e commerce,SBI,2019-01-01
-23,100.0,11.107460356862063,10984,web services,Justdial,2019-04-01
-24,20.0,9.274878893113755,12000,e commerce,BigBasket,2020-11-01
-25,20.0,9.834494681049176,4859,education,Unacademy,2020-05-01
-26,4.5,8.006367567650248,9993,airlines,Air India,2021-05-01
-27,180.0,11.472103470449973,14400,e commerce,Dominos,2021-05-01
-28,0.5,5.991464547107983,1600,public welfare,BPSSC Police exam,2021-02-01
-29,0.0015,0.0,17,public welfare,CoWIN,2021-01-01
-30,35.0,8.448200319929287,350,web services,Juspay,2021-01-01
-31,300.0,11.695247021764184,200,web services,Truecaller,2013-07-01
-32,0.15,4.605170185988092,24,web services,Ashley Madison,2015-08-01
+,breach_count(Million),Relative Exposure Index,employee_count,category,Org,Date,data_classes
+0,3000.0,12.899219826090118,8600,web services,Yahoo,2017-10-01,['Security questions and answers']
+1,1100.0,12.994530005894443,383,public welfare,UIDAI,2018-03-01,"['Names', 'Aadhar number', 'Bank account numbers']"
+2,500.0,12.899219826090118,8600,web services,Yahoo,2014-01-01,"['Names', 'Email addresses', 'Phone numbers', 'Passwords', 'Dates of birth', 'Security questions and answers']"
+3,360.0,11.877568578558138,150,social media,MySpace,2013-06-01,"['Names', 'Usernames', 'Dates of birth']"
+4,340.0,12.513557345278134,22,web services,Exactis,2018-06-01,"['Phone numbers', 'Physical addresses', 'Email addresses', 'Personal interests', 'Family structure', ""Family members' names""]"
+5,330.0,10.691944912900398,5500,social media,Twitter,2018-05-01,['Passwords']
+6,152.0,11.30302714040604,22516,e commerce,Adobe,2013-10-01,"['Usernames', 'Email addresses', 'Passwords', 'Password hints']"
+7,150.0,11.289781913656018,110,health,MyFitnessPal,2018-02-01,"['Email addresses', 'IP addresses', 'Usernames', 'Passwords']"
+8,148.0,11.835974681259302,11200,web services,Equifax,2017-09-01,"['Names', 'Physical addresses', 'Phone numbers', 'Dates of birth', 'Social security numbers', 'driver’s license numbers', 'Credit cards']"
+9,145.0,11.661345470088502,13300,e commerce,ebay,2014-03-01,"['Names', 'Email addresses', 'Physical addresses', 'Phone numbers', 'Dates of birth', 'Passwords']"
+10,137.0,11.422271096702097,1500,web services,Canva,2019-05-01,"['Email addresses', 'Names', 'Usernames', 'Physical addresses', 'Passwords']"
+11,126.0,11.33857207782545,62939,health,Apollo,2018-06-01,"['Names', 'Email addresses', 'Geographic locations', 'Employment statuses', 'Physical addresses']"
+12,100.0,10.596634733096074,250,social media,Quora,2018-12-01,"['Names', 'Email addresses', 'Passwords']"
+13,92.0,10.107788016048858,2104,web services,Youku,2016-12-01,"['Usernames', 'Passwords']"
+14,85.0,10.4341158035983,44641,entertainment,Dailymotion,2016-10-01,"['Email addresses', 'Usernames', 'Passwords']"
+15,69.0,9.820105943597078,2548,web services,Dropbox,2012-01-01,"['Email addresses', 'Passwords']"
+16,66.0,9.775654181026244,411,social media,tumblr,2013-02-01,"['Email addresses', 'Passwords']"
+17,12.3,8.788745881938135,600,e commerce,Bonobos,2021-01-01,"['Physical addresses', 'Purchasing habits', 'Buying preferences', 'Partial credit card data']"
+18,1.9,6.921000505732158,10300,web services,Pixlr,2021-01-01,"['Usernames', 'Email addresses', 'Geographic locations', 'Passwords']"
+19,0.5,5.298317366548037,2532,web services,Zoom,2020-04-01,"['Usernames', 'Email addresses', 'Passwords']"
+20,0.3,5.298317366548037,6547,entertainment,Nintendo,2020-04-01,"['Passwords', 'Names', 'Dates of birth', 'Email addresses', 'Physical addresses']"
+21,3.2,6.749150248805499,295941,e commerce,Hitachi Payment Services System,2016-10-01,"['debit card number', 'PINs']"
+22,3.5,7.5319095880551306,245642,e commerce,SBI,2019-01-01,"['Phone numbers', 'Bank account numbers', 'Account balances', 'Financial transactions']"
+23,100.0,11.107460356862063,10984,web services,Justdial,2019-04-01,"['Names', 'Phone numbers', 'Email addresses', 'Employment statuses', 'Physical addresses']"
+24,20.0,9.274878893113755,12000,e commerce,BigBasket,2020-11-01,"['Email addresses', 'Phone numbers', 'Purchases', 'Physical addresses']"
+25,20.0,9.834494681049176,4859,education,Unacademy,2020-05-01,"['Usernames', 'Passwords', 'date joined', 'last login date', 'Email addresses', 'Names', 'Passwords']"
+26,4.5,8.006367567650248,9993,airlines,Air India,2021-05-01,"['Passport numbers', 'Credit cards', 'Dates of birth', 'Names', 'Purchases']"
+27,180.0,11.472103470449973,14400,e commerce,Dominos,2021-05-01,"['Purchases', 'Email addresses', 'Phone numbers', 'Credit cards']"
+28,0.5,5.991464547107983,1600,public welfare,BPSSC Police exam,2021-02-01,"['Email addresses', 'Names', 'Dates of birth', 'Phone numbers', 'Physical addresses', 'Genders']"
+29,0.0015,0.0,17,public welfare,CoWIN,2021-01-01,"['Names', 'Genders', 'Physical addresses', 'Ages', 'Personal health data']"
+30,35.0,8.448200319929287,350,web services,Juspay,2021-01-01,['Partial credit card data']
+31,300.0,11.695247021764184,200,web services,Truecaller,2013-07-01,"['Phone numbers', 'Email addresses', 'Photos']"
+32,0.15,4.605170185988092,24,web services,Ashley Madison,2015-08-01,"['Partial credit card data', 'Names', 'Purchases', 'Physical addresses', 'IP addresses']"

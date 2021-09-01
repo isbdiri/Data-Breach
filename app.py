@@ -3,6 +3,7 @@ import dash
 import json
 import plotly.express as px
 import pandas as pd
+import dash_vtk
 import dash_core_components as dcc
 from dash.dependencies import Input, Output,State
 import dash_bootstrap_components as dbc
@@ -91,6 +92,7 @@ def Scatter_Plot():
     return fig
 
 def Top_transgressors(k = 3):
+    global Buttons_callback_input
     scatter_data = pd.read_csv("./collect_data/final/scatter_data.csv")
     temp = []
     for i in scatter_data['breach_count(Million)']:
@@ -104,7 +106,15 @@ def Top_transgressors(k = 3):
     scatter_data = scatter_data[['breach_count(Million)',"breach_count_display","Org","Date"]]
     scatter_data = scatter_data.sort_values(by=['breach_count(Million)'], ascending=False)
     output = [html.H3("Top " + str(k) + " transgressors", className="sub-sub-head"), dbc.Row([dbc.Col("Organisation"), dbc.Col("Number of victims"), dbc.Col("Date")], className="data-table-row")]
-    temp = [dbc.Col( [ html.P(i) for i in list(scatter_data["Org"].head(k))] )]
+    # temp = [dbc.Col( [ dbc.Button(i, style={"padding-right":"100px"}, color="light") for i in list(scatter_data["Org"].head(k))])]
+
+    temp,  Buttons_callback_input = [], [Input('default', 'n_clicks')]
+    for num, i in enumerate(list(scatter_data["Org"].head(k))):
+        # temp.append(dbc.Button(i, style={"padding-right":"100px"},id=str("trangressors_" + str(num)), color="light", n_clicks=0))
+        temp.append(html.Button(i,id=str("trangressors_" + str(num))))
+        Buttons_callback_input.append(Input(str("trangressors_" + str(num)), "n_clicks"))
+    
+    temp = [dbc.Col(temp)]
     temp.append(dbc.Col( [ html.P(i) for i in list(scatter_data["breach_count_display"].head(k))] ))
     temp.append(dbc.Col( [ html.P(i) for i in list(scatter_data["Date"].head(k))] ))
     output.append(dbc.Row(temp))
@@ -156,7 +166,6 @@ def Bubble_chart_orgcat():
 #####################################################################
 ######################## Callback Functions #########################
 #####################################################################
-
 @app.callback(Output('container-button-timestamp', 'children'),
               Input('btn-nclicks-1', 'n_clicks'),
               Input('btn-nclicks-2', 'n_clicks'),
@@ -177,6 +186,24 @@ def displayClick(btn1, btn2, btn3):
 def changeCount(x):
     return Top_transgressors(x)
 
+@app.callback(Output('test', 'children'),
+                Buttons_callback_input if ("Buttons_callback_input" in globals()) else Input('default', 'n_clicks'))
+def changeCount(*buttons_input): 
+    changed_id = [p['prop_id'] for p in dash.callback_context.triggered][0]
+    print("////////////////////////////////////")
+    print(changed_id)
+    print(buttons_input)
+    print("####")
+    trigger = dash.callback_context.triggered[0] 
+    print("You clicked button {}".format(trigger["prop_id"].split(".")[0]))
+    if ("Buttons_callback_input" in globals()):
+        print(Buttons_callback_input)
+    if 'default' in changed_id:
+        return html.H1("SOS")
+    if "trangressors_0" in changed_id:
+        return html.H1("SOS1")
+    else:
+        return html.H4("small")
 #####################################################################
 ############################ App Layout #############################
 #####################################################################
@@ -227,6 +254,8 @@ app.layout = html.Div([dbc.Row([
                         dbc.Col(dcc.Graph(figure=Bubble_chart_orgcat()), style={"border":"1px solid grey","border-radius": "10px", "padding": "0px"},width=7),
                         dbc.Col(dcc.Graph(figure=Pie_chart()), style={"border":"1px solid grey","border-radius": "10px", "padding": "0px"},width=5),
                         ]),
+                    html.Div(id="test"),
+                    dbc.Button("Hello", id='default', n_clicks=0)
                     ], 
             width="auto", style={"padding-top": "3%", "padding-left": "27%","padding-bottom": "3%"})
     ],)],
