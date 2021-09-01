@@ -86,7 +86,7 @@ def Bar_Graph(input_val):
 
 def Scatter_Plot():
     scatter_data = pd.read_csv("./collect_data/final/scatter_data.csv")
-    fig = px.scatter(scatter_data, x="employee_count", y="exposure_index", color="category",
+    fig = px.scatter(scatter_data, x="employee_count", y="Relative Exposure Index", color="category",
                  hover_data=['Org'])
     return fig
 
@@ -140,6 +140,19 @@ def Overview_of_scatter():
     final_out = dbc.Row(final_out)
     return final_out
 
+def Pie_chart():
+    df = pd.read_csv("./collect_data/final/Org_cats.csv")
+    fig = px.pie(df, values='Victim Count (Million)', names='category')
+    fig.update_traces(textposition='inside')
+    fig.update_layout(uniformtext_minsize=12, uniformtext_mode='hide')
+    return fig
+
+def Bubble_chart_orgcat():
+    df = pd.read_csv("./collect_data/final/Org_cats.csv")
+    fig = px.scatter(df, x="category", y="Victim Count (Million)", color="category",
+                     size="Bubble Size", text="Number of Breaches")
+    return fig
+
 #####################################################################
 ######################## Callback Functions #########################
 #####################################################################
@@ -163,6 +176,7 @@ def displayClick(btn1, btn2, btn3):
                 Input('num-multi', 'value'))
 def changeCount(x):
     return Top_transgressors(x)
+
 #####################################################################
 ############################ App Layout #############################
 #####################################################################
@@ -208,6 +222,11 @@ app.layout = html.Div([dbc.Row([
                             dbc.Col(Network_Plot1(),width=4),
                             dbc.Col(Network_Plot2(),width=8, style={"border":"1px solid grey","border-radius": "10px", "margin": '0px', "padding": "0px"}),
                             ]),
+                    dbc.Row(html.H2("Analysis across Organizations Category: "), className="sub-head"),
+                    dbc.Row([
+                        dbc.Col(dcc.Graph(figure=Bubble_chart_orgcat()), style={"border":"1px solid grey","border-radius": "10px", "padding": "0px"},width=7),
+                        dbc.Col(dcc.Graph(figure=Pie_chart()), style={"border":"1px solid grey","border-radius": "10px", "padding": "0px"},width=5),
+                        ]),
                     ], 
             width="auto", style={"padding-top": "3%", "padding-left": "27%","padding-bottom": "3%"})
     ],)],
