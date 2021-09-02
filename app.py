@@ -3,7 +3,6 @@ import dash
 import json
 import plotly.express as px
 import pandas as pd
-import dash_vtk
 import dash_core_components as dcc
 from dash.dependencies import Input, Output,State
 import dash_bootstrap_components as dbc
@@ -80,6 +79,38 @@ def Network_Plot2():
                     id = 'network-graph', options= dict(height= '500px', width= '95%'))
     return final
 
+def custom_bubbles(input_str):
+    input_str = "".join(input_str.split("'"))
+    input_str = "".join(input_str.split("\""))
+    input_str = input_str.split(",")
+    temp = []
+    for i in input_str:
+        temp1 = i.split(" ")
+        while 1:
+            try:
+                temp1.remove('')
+            except:
+                break
+        temp.append(" ".join(temp1))
+    input_str = temp
+    # print(type(input_str))
+    # print(input_str)
+    plot_data = {"nodes":[], "edges":[]}
+    for i in input_str:
+        plot_data["nodes"].append(
+            {"id": i,
+            "label": i})
+        if i != input_str[0]:
+            plot_data["edges"].append(
+                {
+                "id": input_str[0] + "_to_" + i ,
+                "from": input_str[0],
+                "to": i
+                })
+    return_val = visdcc.Network(data = plot_data,
+                    id = 'Bubble-graph', options= dict(height= '500px', width= '95%'))
+    return return_val
+
 def Bar_Graph(input_val):
     group_by_year = pd.read_csv("./collect_data/final/year_bar_chart.csv")
     final = px.bar(group_by_year, x="year", y=input_val)
@@ -92,8 +123,8 @@ def Scatter_Plot():
     return fig
 
 def Top_transgressors(k = 3):
-    global Buttons_callback_input
     scatter_data = pd.read_csv("./collect_data/final/scatter_data.csv")
+    scatter_data["Date"] = pd.to_datetime(scatter_data["Date"])
     temp = []
     for i in scatter_data['breach_count(Million)']:
         if i > 1000:
@@ -106,17 +137,16 @@ def Top_transgressors(k = 3):
     scatter_data = scatter_data[['breach_count(Million)',"breach_count_display","Org","Date"]]
     scatter_data = scatter_data.sort_values(by=['breach_count(Million)'], ascending=False)
     output = [html.H3("Top " + str(k) + " transgressors", className="sub-sub-head"), dbc.Row([dbc.Col("Organisation"), dbc.Col("Number of victims"), dbc.Col("Date")], className="data-table-row")]
-    # temp = [dbc.Col( [ dbc.Button(i, style={"padding-right":"100px"}, color="light") for i in list(scatter_data["Org"].head(k))])]
-
-    temp,  Buttons_callback_input = [], [Input('default', 'n_clicks')]
-    for num, i in enumerate(list(scatter_data["Org"].head(k))):
+    temp = [dbc.Col( [ dbc.Button(i, style={"padding-right":"100px"}, color="light",id=str("trangressors_" + str(num)) ) for num,i in enumerate(list(scatter_data["Org"].head(k)))])]
+    # temp,  Buttons_callback_input = [], [Input('default', 'n_clicks')]
+    # for num, i in enumerate(list(scatter_data["Org"].head(k))):
         # temp.append(dbc.Button(i, style={"padding-right":"100px"},id=str("trangressors_" + str(num)), color="light", n_clicks=0))
-        temp.append(html.Button(i,id=str("trangressors_" + str(num))))
-        Buttons_callback_input.append(Input(str("trangressors_" + str(num)), "n_clicks"))
+        # temp.append(html.Button(i,id=str("trangressors_" + str(num))))
+        # Buttons_callback_input.append(Input(str("trangressors_" + str(num)), "n_clicks"))
     
     temp = [dbc.Col(temp)]
     temp.append(dbc.Col( [ html.P(i) for i in list(scatter_data["breach_count_display"].head(k))] ))
-    temp.append(dbc.Col( [ html.P(i) for i in list(scatter_data["Date"].head(k))] ))
+    temp.append(dbc.Col( [ html.P(str(i.month) + "-" + str(i.year)) for i in list(scatter_data["Date"].head(k))] ))
     output.append(dbc.Row(temp))
     output = dbc.Col(output)
     return output
@@ -181,29 +211,28 @@ def displayClick(btn1, btn2, btn3):
     else:
         return dcc.Graph(figure=Bar_Graph("Number of Data Breaches"))
 
-@app.callback(Output('container-trangressor-count', 'children'),
-                Input('num-multi', 'value'))
-def changeCount(x):
-    return Top_transgressors(x)
 
-@app.callback(Output('test', 'children'),
-                Buttons_callback_input if ("Buttons_callback_input" in globals()) else Input('default', 'n_clicks'))
-def changeCount(*buttons_input): 
+@app.callback(Output('change_scatter_with_bubble', 'children'),
+                [Input('default', 'n_clicks')] + [Input('trangressors_' + str(i), 'n_clicks') for i in range(10)])
+def changeCount(*buttons_input):
+    Df_bubble_data = pd.read_csv("./collect_data/final/scatter_data.csv")
     changed_id = [p['prop_id'] for p in dash.callback_context.triggered][0]
-    print("////////////////////////////////////")
-    print(changed_id)
-    print(buttons_input)
-    print("####")
     trigger = dash.callback_context.triggered[0] 
-    print("You clicked button {}".format(trigger["prop_id"].split(".")[0]))
-    if ("Buttons_callback_input" in globals()):
-        print(Buttons_callback_input)
-    if 'default' in changed_id:
-        return html.H1("SOS")
-    if "trangressors_0" in changed_id:
-        return html.H1("SOS1")
-    else:
-        return html.H4("small")
+    trigger = trigger["prop_id"].split(".")[0]
+    final = [Overview_of_scatter(),
+            dcc.Graph(figure=Scatter_Plot())
+            ]
+    if trigger == "default":
+        return final
+    try:
+        trigger = trigger.split("_")[-1]
+        trigger = int(trigger)
+        final = custom_bubbles(Df_bubble_data["data_classes"][trigger][1:-1])
+        # final = [html.H2("Data Fields Leaked:")].append(dcc.Graph(figure=final))
+        return final
+    except ValueError:
+        return final
+
 #####################################################################
 ############################ App Layout #############################
 #####################################################################
@@ -218,22 +247,27 @@ app.layout = html.Div([dbc.Row([
                     dbc.Row(html.H2("Victim Distribution"), className="sub-head"),
                     dbc.Row([
                             dbc.Col([
-                                    html.P("Select top"),
-                                    dcc.Input(
-                                            id='num-multi',
-                                            type='number',
-                                            value=6,
-                                            min = 1,
-                                            max = 10,
-                                            className="inpt"
-                                            ),
-                                    html.P("Victims"),
-                                    html.Div(id='container-trangressor-count')
+                                    dbc.Button("Reset", id='default',color="dark",outline=True, n_clicks=0),
+                                    # html.P("Select top"),
+                                    # dcc.Input(
+                                    #         id='num-multi',
+                                    #         type='number',
+                                    #         value=6,
+                                    #         min = 1,
+                                    #         max = 10,
+                                    #         className="inpt"
+                                    #         ),
+                                    # html.P("Victims"),
+                                    # html.Div(id='container-trangressor-count')
+                                    html.Div(Top_transgressors(10)),
                                     ], width=5),
-                            dbc.Col([
-                                    Overview_of_scatter(),
-                                    dcc.Graph(figure=Scatter_Plot())
-                                    ], width=7)
+                            # dbc.Col([
+                            #         Overview_of_scatter(),
+                            #         dcc.Graph(figure=Scatter_Plot())
+                            #         ], width=7)
+                            dbc.Col(
+                                html.Div(id="change_scatter_with_bubble"),
+                                width=7)
                             ]),
                     dbc.Row(html.H2("Intensity of Data-Breaches over Time: "), className="sub-head"),
                     dbc.Row([
@@ -255,7 +289,6 @@ app.layout = html.Div([dbc.Row([
                         dbc.Col(dcc.Graph(figure=Pie_chart()), style={"border":"1px solid grey","border-radius": "10px", "padding": "0px"},width=5),
                         ]),
                     html.Div(id="test"),
-                    dbc.Button("Hello", id='default', n_clicks=0)
                     ], 
             width="auto", style={"padding-top": "3%", "padding-left": "27%","padding-bottom": "3%"})
     ],)],
