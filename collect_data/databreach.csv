@@ -1,7 +1,7 @@
 Date,Org,category,breach_count(Million),employee_count,data_classes
 10-2017,Yahoo,web services,3000,8600,Security questions and answers
 03-2018,UIDAI,public welfare,1100,383,"Names,Aadhar number,Bank account numbers"
-2014,Yahoo,web services,500,8600,"Names,Email addresses,Phone numbers,Passwords,Dates of birth,Security questions and answers"
+12-2014,Yahoo,web services,500,8600,"Names,Email addresses,Phone numbers,Passwords,Dates of birth,Security questions and answers"
 06-2013,MySpace,social media,360,150,"Names,Usernames,Dates of birth"
 06-2018,Exactis,web services,340,22,"Phone numbers,Physical addresses,Email addresses,Personal interests,Family structure,Family members' names"
 05-2018,Twitter,social media,330,5500,Passwords
@@ -14,7 +14,7 @@ Date,Org,category,breach_count(Million),employee_count,data_classes
 12-2018,Quora,social media,100,250,"Names,Email addresses,Passwords"
 12-2016,Youku,web services,92,2104,"Usernames,Passwords"
 10-2016,Dailymotion,entertainment,85,44641,"Email addresses,Usernames,Passwords"
-2012,Dropbox,web services,69,2548,"Email addresses,Passwords"
+06-2012,Dropbox,web services,69,2548,"Email addresses,Passwords"
 02-2013,tumblr,social media,66,411,"Email addresses,Passwords"
 01-2021,Bonobos,e commerce,12.3,600,"Physical addresses,Purchasing habits,Buying preferences,Partial credit card data"
 01-2021,Pixlr,web services,1.9,10300,"Usernames,Email addresses,Geographic locations,Passwords"

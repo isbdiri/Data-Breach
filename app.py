@@ -43,10 +43,14 @@ explaination_text = """
 
                     2. **Data-Breaches over Time**
 
-                    * Aim to study the trends in Victim Count, Information lost and Frequency over the years
+                    * Studied the trends in Victim Count, Information lost and Frequency over the years.
+
+                    3. **Across Organizations Category**
+
+                    * A visual representation of impact of leaks across different organization Categories.
 
 
-                    3. **Data categories and classes lost together**
+                    4. **Data categories and classes lost together**
 
                     * A visual representation of data Fields often lost together.
 
@@ -128,15 +132,16 @@ def Top_transgressors(k = 3):
     temp = []
     for i in scatter_data['breach_count(Million)']:
         if i > 1000:
-            temp.append(str(i) + " M")
+            temp.append(str(int(i)) + " M")
         elif i < 1:
-            temp.append(str(i*1000) + " K")
+            temp.append(str(int(i*1000)) + " K")
         else:
-            temp.append(str(i) + " M")
+            temp.append(str(int(i)) + " M")
     scatter_data["breach_count_display"] = temp
     scatter_data = scatter_data[['breach_count(Million)',"breach_count_display","Org","Date"]]
     scatter_data = scatter_data.sort_values(by=['breach_count(Million)'], ascending=False)
-    output = [html.H3("Top " + str(k) + " transgressors", className="sub-sub-head"), dbc.Row([dbc.Col("Organisation"), dbc.Col("Number of victims"), dbc.Col("Date")], className="data-table-row")]
+    # output = [html.H3("Top " + str(k) + " transgressors", className="sub-sub-head"), dbc.Row([dbc.Col("Organisation"), dbc.Col("Number of victims"), dbc.Col("Date")], className="data-table-row")]
+    output = [ dbc.Row([dbc.Col("Organisation"), dbc.Col("Number of victims"), dbc.Col("Date")], className="data-table-row")]
     temp = [dbc.Col( [ dbc.Button(i, style={"padding-right":"100px"}, color="light",id=str("trangressors_" + str(num)) ) for num,i in enumerate(list(scatter_data["Org"].head(k)))])]
     # temp,  Buttons_callback_input = [], [Input('default', 'n_clicks')]
     # for num, i in enumerate(list(scatter_data["Org"].head(k))):
@@ -154,14 +159,20 @@ def Top_transgressors(k = 3):
 def Overview_of_scatter():
     final_out = []
     scatter_data = pd.read_csv("./collect_data/final/scatter_data.csv")
+    
+    # orgs reviewed
+    temp = [ html.H5("Companies") ]
+    temp.append(html.P(str(len(scatter_data["Org"].unique()))))
+    final_out.append( dbc.Col(temp, className="scatter-overview") )
+
 
     # categories
-    temp = [ html.H5("Category of organizations") ]
+    temp = [ html.H5("Categories") ]
     temp.append(html.P(str(len(scatter_data["category"].unique()))))
     final_out.append( dbc.Col(temp, className="scatter-overview") )
     
     # Count Victims
-    temp = [ html.H5("Victims of breach")]
+    temp = [ html.H5("Victims")]
     count = sum(scatter_data["breach_count(Million)"])
     if count > 1000:
         count = str(int(count/1000)) + " B+"
@@ -170,11 +181,6 @@ def Overview_of_scatter():
     else:
         count = str(int(count)) + " M+"
     temp.append(html.P(count))
-    final_out.append( dbc.Col(temp, className="scatter-overview") )
-
-    # orgs reviewed
-    temp = [ html.H5("Organizations reviewed") ]
-    temp.append(html.P(str(len(scatter_data["Org"].unique()))))
     final_out.append( dbc.Col(temp, className="scatter-overview") )
 
     final_out = dbc.Row(final_out)
@@ -213,7 +219,7 @@ def displayClick(btn1, btn2, btn3):
 
 
 @app.callback(Output('change_scatter_with_bubble', 'children'),
-                [Input('default', 'n_clicks')] + [Input('trangressors_' + str(i), 'n_clicks') for i in range(10)])
+                [Input('default', 'n_clicks')] + [Input('trangressors_' + str(i), 'n_clicks') for i in range(15)])
 def changeCount(*buttons_input):
     Df_bubble_data = pd.read_csv("./collect_data/final/scatter_data.csv")
     changed_id = [p['prop_id'] for p in dash.callback_context.triggered][0]
@@ -244,10 +250,12 @@ app.layout = html.Div([dbc.Row([
                             ]),
                     ], width=3, style={"position":"fixed"},className="left-col"),
             dbc.Col([ 
-                    dbc.Row(html.H2("Victim Distribution"), className="sub-head"),
+                    dbc.Row(html.H2("Victim Distribution: "), className="sub-head"),
                     dbc.Row([
                             dbc.Col([
-                                    dbc.Button("Reset", id='default',color="dark",outline=True, n_clicks=0),
+                                    dbc.Row([html.H3("Top 15 transgressors:", className="sub-sub-head"),
+                                                dbc.Button("Reset", id='default',color="dark",outline=True, n_clicks=0, style={"align":"right"})
+                                            ]),
                                     # html.P("Select top"),
                                     # dcc.Input(
                                     #         id='num-multi',
@@ -259,7 +267,7 @@ app.layout = html.Div([dbc.Row([
                                     #         ),
                                     # html.P("Victims"),
                                     # html.Div(id='container-trangressor-count')
-                                    html.Div(Top_transgressors(10)),
+                                    html.Div(Top_transgressors(15)),
                                     ], width=5),
                             # dbc.Col([
                             #         Overview_of_scatter(),
@@ -278,19 +286,19 @@ app.layout = html.Div([dbc.Row([
                                     ], width=3, style={"padding-top": "3%", "justify-content":"space-between", "display":"flex", "flex-direction":"column", "padding-top":"6%", "padding-bottom":"9%"}),
                             dbc.Col(html.Div(id='container-button-timestamp'),width=9),
                             ]),
+                    dbc.Row(html.H2("Analysis across Organizations Category: "), className="sub-head"),
+                    dbc.Row([
+                        dbc.Col(dcc.Graph(figure=Bubble_chart_orgcat(), id="orgcat_bubbleplot"), style={"border":"1px solid grey","border-radius": "10px", "padding": "0px", "margin": '0px'},width=7),
+                        dbc.Col(dcc.Graph(figure=Pie_chart()), style={"border":"1px solid grey","border-radius": "10px", "padding": "0px", "margin": '0px'},width=5),
+                        ]),
                     dbc.Row(html.H2("Data categories and classes generally lost together: "), className="sub-head"),
                     dbc.Row([
                             dbc.Col(Network_Plot1(),width=4),
                             dbc.Col(Network_Plot2(),width=8, style={"border":"1px solid grey","border-radius": "10px", "margin": '0px', "padding": "0px"}),
                             ]),
-                    dbc.Row(html.H2("Analysis across Organizations Category: "), className="sub-head"),
-                    dbc.Row([
-                        dbc.Col(dcc.Graph(figure=Bubble_chart_orgcat()), style={"border":"1px solid grey","border-radius": "10px", "padding": "0px"},width=7),
-                        dbc.Col(dcc.Graph(figure=Pie_chart()), style={"border":"1px solid grey","border-radius": "10px", "padding": "0px"},width=5),
-                        ]),
                     html.Div(id="test"),
                     ], 
-            width="auto", style={"padding-top": "3%", "padding-left": "27%","padding-bottom": "3%"})
+            width="auto", style={"padding-top": "1%", "padding-left": "26.5%","padding-bottom": "3%"})
     ],)],
     style={
                 "padding": "0%"

@@ -4,7 +4,7 @@ Passwords,passwords
 Usernames,PII
 IP addresses,device info
 Names,PII
-Dates of birth,age
+Dates of birth,demographics
 Phone numbers,PII
 Physical addresses,geolocation
 Genders,demographics
@@ -49,18 +49,18 @@ Relationship statuses,demographics
 Drinking habits,health
 Smoking habits,health
 Passport numbers,PII
-Partial dates of birth,age
+Partial dates of birth,demographics
 Profile photos,PII
 Personal descriptions,PII
 Family members' names,PII
 Social security numbers,PII
 Occupations,employment history
 Nationalities,demographics
-Age groups,age
+Age groups,demographics
 IMEI numbers,device info
 IMSI numbers,device info
 Homepage URLs,PII
-Ages,age
+Ages,demographics
 Personal interests,consumer behavior
 Financial transactions,financial info
 Financial investments,financial info

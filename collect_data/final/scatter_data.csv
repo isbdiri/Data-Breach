@@ -1,7 +1,7 @@
 ,breach_count(Million),Relative Exposure Index,employee_count,category,Org,Date,data_classes
 0,3000.0,12.899219826090118,8600,web services,Yahoo,2017-10-01,['Security questions and answers']
 1,1100.0,12.994530005894443,383,public welfare,UIDAI,2018-03-01,"['Names', 'Aadhar number', 'Bank account numbers']"
-2,500.0,12.899219826090118,8600,web services,Yahoo,2014-01-01,"['Names', 'Email addresses', 'Phone numbers', 'Passwords', 'Dates of birth', 'Security questions and answers']"
+2,500.0,12.899219826090118,8600,web services,Yahoo,2014-12-01,"['Names', 'Email addresses', 'Phone numbers', 'Passwords', 'Dates of birth', 'Security questions and answers']"
 3,360.0,11.877568578558138,150,social media,MySpace,2013-06-01,"['Names', 'Usernames', 'Dates of birth']"
 4,340.0,12.513557345278134,22,web services,Exactis,2018-06-01,"['Phone numbers', 'Physical addresses', 'Email addresses', 'Personal interests', 'Family structure', ""Family members' names""]"
 5,330.0,10.691944912900398,5500,social media,Twitter,2018-05-01,['Passwords']
@@ -14,7 +14,7 @@
 12,100.0,10.596634733096074,250,social media,Quora,2018-12-01,"['Names', 'Email addresses', 'Passwords']"
 13,92.0,10.107788016048858,2104,web services,Youku,2016-12-01,"['Usernames', 'Passwords']"
 14,85.0,10.4341158035983,44641,entertainment,Dailymotion,2016-10-01,"['Email addresses', 'Usernames', 'Passwords']"
-15,69.0,9.820105943597078,2548,web services,Dropbox,2012-01-01,"['Email addresses', 'Passwords']"
+15,69.0,9.820105943597078,2548,web services,Dropbox,2012-06-01,"['Email addresses', 'Passwords']"
 16,66.0,9.775654181026244,411,social media,tumblr,2013-02-01,"['Email addresses', 'Passwords']"
 17,12.3,8.788745881938135,600,e commerce,Bonobos,2021-01-01,"['Physical addresses', 'Purchasing habits', 'Buying preferences', 'Partial credit card data']"
 18,1.9,6.921000505732158,10300,web services,Pixlr,2021-01-01,"['Usernames', 'Email addresses', 'Geographic locations', 'Passwords']"

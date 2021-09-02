@@ -11,6 +11,7 @@ body {
     margin: 0;
 }
 
+
 .top-desc {
     padding-bottom: 20px;
     color: white;
@@ -24,7 +25,7 @@ body {
 .left-col {
     background-color: #05183a;
     height: 100%;
-    padding: 3%;
+    padding: 2.5%;
 }
 
 .MidBlock{
@@ -35,11 +36,14 @@ body {
 .sub-head {
     color: #4181ff;
     font-weight: bold;
-    /*padding-left: 2%;*/
+    padding-top: 2%;
 }
 
 .sub-sub-head {
     color: #01183a;
+    font-size: 25px;
+    text-align: left;
+    padding-bottom: 5px;
 }
 
 .scatter-overview {
@@ -48,10 +52,18 @@ body {
     background-color: #01183a;
     color: #fff;
     border-radius: 3px;
-    border-bottom: 4px solid #4181ff;
+    /*border-bottom: 4px solid #4181ff;*/
+    text-align: center;
+    font-weight:  bold;
+    font-size: 22px;
+    /*padding-top: 5px;*/
 }
 
 .inpt {
     width: 100px;
     display: block;
+}
+
+#orgcat_bubbleplot .legendsymbols text{
+opacity: 0;
 }
